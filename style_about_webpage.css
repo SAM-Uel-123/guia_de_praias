@@ -1,0 +1,38 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: rgba(94, 197, 94, 0.707);
+
+}
+
+.link_interno {
+    text-decoration: none;
+    color: blue;
+}
+
+header {
+    background-color: aqua;
+    color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+section {
+    margin-top: 20px;
+}
+
+section > p {
+    max-width: 600px;
+    min-width: 200px;
+    border-radius: 10px;
+    margin: auto;
+    text-indent: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.44);
+    margin-bottom: 10px;
+}
+

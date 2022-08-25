@@ -8,12 +8,10 @@
     --color-font-navbar: yellow;
 }
 
-
-
 body {
     background-color: rgba(94, 197, 94, 0.707);
-    height: 100vh;
-    overflow-x: hidden;
+    width: 100vw;
+    height: 97vh;
 }
 
 
@@ -21,9 +19,15 @@ section {
     position: relative;
     display: block;
     background-color: white;
-    width: 80vw;
-    min-height: 500px;
+    
     max-height: 5000px;
+    min-height: 600px;
+    
+    padding: 50px;
+
+    min-width: 650px;
+    max-width: 900px;
+
     margin: auto;
     margin-bottom: 100px;
     padding-bottom: 200px;
@@ -75,7 +79,8 @@ nav {
     color: white;
     border-radius: 30px;
     border-color: transparent;
-    font-size: 1.2rem;
+    font-size: 2vw;
+    
     padding: 15px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.495);
 }
@@ -156,9 +161,6 @@ nav {
 }
 
 
-
-
-
 .imagem {
     display: block;
     background-image: url('plano\ de\ fundo/bonete-20220628_122036.jpg');
@@ -172,10 +174,22 @@ nav {
 .miniaturas {
     display: inline-block;
     position: relative;
-    height: 30vw;
+    
+    
     width: 30vw;
+    height: 30vw;
+
+    
+    min-width: 150px;
+    min-height: 150px;
+
+    max-width: 400px;
+    max-height: 400px;
+    
+    padding: 5px;
+
     border-radius: 20px;
-    margin: 100px 20px 10px 10px;
+    margin: 100px 0px 0px 0px;
     box-shadow: 3px 3px 8px black;
 }
 
@@ -189,37 +203,53 @@ nav {
  }
 
 .layout-history-beaches1 > .history-border > .flip-pictures > .pictures-beaches .link-about {
-    position: relative;
-    margin-left: 130px;
-    top: 300px;
+    
+
+    position: absolute;
+    margin: auto;
+    
+    top: 70%;
+    left: 25%;
+    
     
 }   
 
 .layout-history-beaches2 > .history-border > .flip-pictures > .pictures-beaches .link-about {
-    position: relative;
-    margin-left: 150px;
-    top: 300px;
-    
+    position: absolute;
+    margin: auto;    
+    top: 70%;
+    left: 30%;
 }
 
 .layout-history-beaches1, .layout-history-beaches2 {
     display: block;
     position: relative;
+
     margin: auto;
-    max-width: 800px;
+
+    width: 90vw;
+
+    min-width: 300px;
+
+    max-width: 1000px;
     max-height: 400px;
-    margin-top: 60px;
+
+    margin-top: 10vh;
+    margin-bottom: 20vh;
+    
 }
 
 .history-border {
     display: inline-block;
-    position: relative;
+    
+    min-width: 700px;
     max-width: 1000px;
-    max-height: 600px;
+    max-height: 150px;
+    
 
 }
 
-.descricao-praias{
+.descricao-praias {
     display: inline-block;
     position: relative;
     border-width: 2px;
@@ -227,19 +257,31 @@ nav {
     border-color: black;
     border-radius: 15px;
 
-    max-width: 350px;
-    max-height: 600px;
+    min-width: 200px;
+    
+    
+    max-width: 400px;
+    max-height: 400px;
+    
+    
     padding: 10px;
-    color: black;
-    font-size: 1.1vw;
 }
 
+.descricao-praias > p, .descricao-praias > p > a {
+    position: relative;
+    color: black;
+    font-size: 0.8em;
+    
+    min-width: 400px;
+    max-width: 500px;
+    max-height: 600px;
+}
 
 .layout-history-beaches1 > .history-border > .descricao-praias {
+    position: absolute;
     text-align: left;
-    margin-right: auto;
-    top: 90px;
-    left: 30px;
+    top: 40%;
+    left: 45%;
     
 }
 
@@ -259,6 +301,7 @@ footer {
     color: white;
     margin: auto;
     width: 100%;
+    min-width: 800px;
     padding: 10px;
     text-align: center;
 

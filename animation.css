@@ -11,19 +11,26 @@
 
 }
 
-@supports (transform-style: preserve-3d) {
+@supports (transition-duration: 0.8s) {
     .pictures-beaches{
         position: relative;
         width: 100%;
         height: 100%;
-        -webkit-transition: -webkit-transform 0.8s;
-        -ms-transition: transform 0.8s;
-        transition: transform 0.8s;
+        -webkit-transition-duration: 0.8s;
+        -ms-transition-duration: 0.8s;
+        transition-duration: 0.8s;
+        
+    }
+}
+
+@supports (transform-style: preserve-3d){
+    .pictures-beaches {
+        position: relative;
+        width: 100%;
+        height: 100%;
         -webkit-transform-style: preserve-3d;
         -ms-transform-style: preserve-3d;
         transform-style: preserve-3d;
-        
-        
     }
 }
 
@@ -46,13 +53,18 @@
     }
 }
 
-@supports (filter: blur(1px), transition: all 2s ease) {
+@supports (transition-duration: 2s) {
     .flip-pictures:hover .pictures-beaches > .imagem-frente > img {
-        -ms-transition: all 2 ease;
-        -webkit-transition: all 2 ease; 
-        transition: all 2s ease;
-        -ms-filter: blur(5px);
+        
+        
+        transition-duration: 2s;
+    }
+}
+
+@supports (filter: blur(1px)) {
+    .flip-pictures:hover .pictures-beaches > .imagem-frente > img {
         -webkit-filter: blur(5px);
+        -ms-filter: blur(5px);
         filter: blur(5px);
     }
 }

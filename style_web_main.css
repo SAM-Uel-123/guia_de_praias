@@ -207,23 +207,64 @@ nav {
  }
 
 .layout-history-beaches1 > .history-border > .flip-pictures > .pictures-beaches .link-about {
-    
-
     position: absolute;
-    margin: auto;
-    
-    top: 70%;
-    left: 25%;
-    
-    
-}   
-
+ }
 .layout-history-beaches2 > .history-border > .flip-pictures > .pictures-beaches .link-about {
     position: absolute;
-    margin: auto;    
-    top: 70%;
-    left: 30%;
+
 }
+
+
+@media screen and (min-width: 900px) {
+    .layout-history-beaches1 > .history-border > .flip-pictures > .pictures-beaches .link-about {
+        top: 65%;
+        left: 28%;
+        
+        
+    }   
+    
+    .layout-history-beaches2 > .history-border > .flip-pictures > .pictures-beaches .link-about {
+        top: 70%;
+        left: 30%;
+    }
+        
+}
+
+
+
+@media screen and (max-width: 899px) {
+    .layout-history-beaches1 > .history-border > .flip-pictures > .pictures-beaches .link-about {
+        top: 90%;
+        left: 25%;
+        
+        
+    }   
+    
+    .layout-history-beaches2 > .history-border > .flip-pictures > .pictures-beaches .link-about {
+        top: 70%;
+        left: 30%;
+    }
+        
+}
+
+
+@media screen and (max-width: 500px){
+    .layout-history-beaches1 > .history-border > .flip-pictures > .pictures-beaches .link-about {
+        top: 140%;
+        left: 10%;
+        
+        
+    }   
+    
+    .layout-history-beaches2 > .history-border > .flip-pictures > .pictures-beaches .link-about {
+        top: 140%;
+        left: 10%;
+    }
+        
+}
+
+
+
 
 .layout-history-beaches1, .layout-history-beaches2 {
     display: block;

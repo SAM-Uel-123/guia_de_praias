@@ -303,7 +303,7 @@ nav {
     }
         
     .layout-history-beaches1 > .history-border > .descricao-praias {
-        top: 20px;
+        top: 90px;
         left: 20px;
     
     }
@@ -336,7 +336,7 @@ nav {
     }
 
     .layout-history-beaches2 > .history-border > .descricao-praias {    
-        top: 150px;
+        top: 160px;
         left: -10px;
         
     }       
@@ -391,7 +391,7 @@ nav {
     }
 
     .layout-history-beaches2 > .history-border > .descricao-praias {    
-        top: 90px;
+        top: 180px;
         left: -10px;
     }         
 }

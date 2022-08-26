@@ -254,7 +254,7 @@ nav {
     border-color: black;
     border-radius: 15px;
 
-    max-height: 500px;
+    max-height: 550px;
     
     min-width: 150px;
     max-width: 250px;
@@ -373,6 +373,42 @@ nav {
 
 @media screen and (max-width: 500px){
     .layout-history-beaches1 > .history-border > .flip-pictures > .pictures-beaches .link-about {
+        top: 120%;
+        left: 20%;
+        
+        
+    }   
+    
+    .layout-history-beaches2 > .history-border > .flip-pictures > .pictures-beaches .link-about {
+        top: 180%;
+        left: 20%;
+    }
+
+    .layout-history-beaches1 > .history-border > .descricao-praias {
+        max-width: 200px;
+        top: 200px;
+        left: 10px;
+    
+    }
+
+    .layout-history-beaches2 > .history-border > .descricao-praias {  
+        max-width: 200px;
+        top: 150px;
+        left: -10px;
+    }         
+}
+
+
+@media screen and (max-width: 300px){
+    .btn-about#conhecer {
+        margin: auto;
+        position: relative;
+        top: 150px;
+    }
+    
+
+
+    .layout-history-beaches1 > .history-border > .flip-pictures > .pictures-beaches .link-about {
         top: 190%;
         left: 20%;
         
@@ -385,13 +421,13 @@ nav {
     }
 
     .layout-history-beaches1 > .history-border > .descricao-praias {
-        top: 140px;
+        top: 250px;
         left: 10px;
     
     }
 
     .layout-history-beaches2 > .history-border > .descricao-praias {    
-        top: 180px;
+        top: 190px;
         left: -10px;
     }         
 }

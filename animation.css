@@ -1,3 +1,7 @@
+.btn-about {
+    animation-duration: 2s;
+}
+
 @supports (perspective: 1000px) {
     .flip-pictures {
         display: inline-block;

@@ -2,97 +2,298 @@
     animation-duration: 2s;
 }
 
-@supports (perspective: 1000px) {
-    .flip-pictures {
-        display: inline-block;
-        position: relative;
-        width: 30vw;
-        height: 30vw;
-        max-width: 400px;
-        min-width: 120px;
-        -webkit-perspective: 1000px;
-        -ms-perspective: 1000px;
-        perspective: 1000px;
-        background-color: transparent;
+
+@media screen and (min-width: 1001px) {
+    @supports (perspective: 1001px) {
+        .flip-pictures {
+            display: inline-block;
+            position: relative;
+            width: 30vw;
+            height: 30vw;
+            max-width: 200px;
+            min-width: 120px;
+            -webkit-perspective: 1001px;
+            -ms-perspective: 1001px;
+            perspective: 1001px;
+            background-color: transparent;
+        }
+
     }
 
+    @supports (transition-duration: 0.8s) {
+        .pictures-beaches{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            -webkit-transition-duration: 0.8s;
+            -ms-transition-duration: 0.8s;
+            transition-duration: 0.8s;
+            
+        }
+    }
+
+    @supports (transform-style: preserve-3d){
+        .pictures-beaches {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            -webkit-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
+    }
+
+    @supports (transform: rotateY(180deg)) {
+        .layout-history-beaches1 .flip-pictures:hover .pictures-beaches {
+            -webkit-transform: rotateY(-180deg);
+            -ms-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+            
+        }
+    }
+
+    @supports (transform: rotateY(-180deg)) {
+        .layout-history-beaches2 .flip-pictures:hover .pictures-beaches {
+            -webkit-transform: rotateY(180deg);
+            -ms-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+
+            
+        }
+    }
+
+    @supports (transition-duration: 2s) {
+        .flip-pictures:hover .pictures-beaches > .imagem-frente > img {
+            transition-duration: 2s;
+        }
+    }
+
+    @supports (filter: blur(1px)) {
+        .flip-pictures:hover .pictures-beaches > .imagem-frente > img {
+            -webkit-filter: blur(5px);
+            -ms-filter: blur(5px);
+            filter: blur(5px);
+        }
+    }
+
+    @supports (backface-visibility: hidden) {
+        .imagem-frente, .imagem-atras {
+            position: absolute;
+            width: 100%;
+            height: 100%;        
+            -webkit-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            backface-visibility: hidden;
+            
+        }
+    }
+
+    @supports (transform: rotateY(180deg)) {
+        .imagem-atras {
+            -webkit-transform: rotateY(180deg);
+            -ms-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+            
+        }
+    }
 }
 
-@supports (transition-duration: 0.8s) {
-    .pictures-beaches{
-        position: relative;
-        width: 100%;
-        height: 100%;
-        -webkit-transition-duration: 0.8s;
-        -ms-transition-duration: 0.8s;
-        transition-duration: 0.8s;
-        
+
+
+@media screen and (max-width: 1000px) {
+    @supports (perspective: 1000px) {
+        .flip-pictures {
+            display: inline-block;
+            position: relative;
+            width: 30vw;
+            height: 30vw;
+            max-width: 400px;
+            min-width: 120px;
+            -webkit-perspective: 1000px;
+            -ms-perspective: 1000px;
+            perspective: 1000px;
+            background-color: transparent;
+        }
+
+    }
+
+    @supports (transition-duration: 0.8s) {
+        .pictures-beaches{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            -webkit-transition-duration: 0.8s;
+            -ms-transition-duration: 0.8s;
+            transition-duration: 0.8s;
+            
+        }
+    }
+
+    @supports (transform-style: preserve-3d){
+        .pictures-beaches {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            -webkit-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
+    }
+
+    @supports (transform: rotateY(180deg)) {
+        .layout-history-beaches1 .flip-pictures:hover .pictures-beaches {
+            -webkit-transform: rotateY(-180deg);
+            -ms-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+            
+        }
+    }
+
+    @supports (transform: rotateY(-180deg)) {
+        .layout-history-beaches2 .flip-pictures:hover .pictures-beaches {
+            -webkit-transform: rotateY(180deg);
+            -ms-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+
+            
+        }
+    }
+
+    @supports (transition-duration: 2s) {
+        .flip-pictures:hover .pictures-beaches > .imagem-frente > img {
+            
+            
+            transition-duration: 2s;
+        }
+    }
+
+    @supports (filter: blur(1px)) {
+        .flip-pictures:hover .pictures-beaches > .imagem-frente > img {
+            -webkit-filter: blur(5px);
+            -ms-filter: blur(5px);
+            filter: blur(5px);
+        }
+    }
+
+    @supports (backface-visibility: hidden) {
+        .imagem-frente, .imagem-atras {
+            position: absolute;
+            width: 100%;
+            height: 100%;        
+            -webkit-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            backface-visibility: hidden;
+            
+        }
+    }
+
+    @supports (transform: rotateY(180deg)) {
+        .imagem-atras {
+            -webkit-transform: rotateY(180deg);
+            -ms-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+            
+        }
     }
 }
 
-@supports (transform-style: preserve-3d){
-    .pictures-beaches {
-        position: relative;
-        width: 100%;
-        height: 100%;
-        -webkit-transform-style: preserve-3d;
-        -ms-transform-style: preserve-3d;
-        transform-style: preserve-3d;
+
+@media screen and (max-width: 500px) {
+    @supports (perspective: 500px) {
+        .flip-pictures {
+            display: inline-block;
+            position: relative;
+            background-color: transparent;
+    
+            max-width: 95vw;
+            width: 265px;
+            height: max-content;
+    
+            -webkit-perspective: 500px;
+            -ms-perspective: 500px;
+            perspective: 500px;
+            
+        }
+    }
+
+    @supports (transition-duration: 0.8s) {
+        .pictures-beaches{
+            position: relative;
+            width: 100%;
+            height: 100%;
+            -webkit-transition-duration: 0.8s;
+            -ms-transition-duration: 0.8s;
+            transition-duration: 0.8s;
+            
+        }
+    }
+
+    @supports (transform-style: preserve-3d){
+        .pictures-beaches {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            -webkit-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+        }
+    }
+
+    @supports (transform: rotateY(180deg)) {
+        .layout-history-beaches1 .flip-pictures:hover .pictures-beaches {
+            -webkit-transform: rotateY(-180deg);
+            -ms-transform: rotateY(-180deg);
+            transform: rotateY(-180deg);
+            
+        }
+    }
+
+    @supports (transform: rotateY(-180deg)) {
+        .layout-history-beaches2 .flip-pictures:hover .pictures-beaches {
+            -webkit-transform: rotateY(180deg);
+            -ms-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+
+            
+        }
+    }
+
+    @supports (transition-duration: 2s) {
+        .flip-pictures:hover .pictures-beaches > .imagem-frente > img {
+            
+            
+            transition-duration: 2s;
+        }
+    }
+
+    @supports (filter: blur(1px)) {
+        .flip-pictures:hover .pictures-beaches > .imagem-frente > img {
+            -webkit-filter: blur(5px);
+            -ms-filter: blur(5px);
+            filter: blur(5px);
+        }
+    }
+
+    @supports (backface-visibility: hidden) {
+        .imagem-frente, .imagem-atras {
+            position: absolute;
+            width: 100%;
+            height: 100%;        
+            -webkit-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            backface-visibility: hidden;
+            
+        }
+    }
+
+    @supports (transform: rotateY(180deg)) {
+        .imagem-atras {
+            -webkit-transform: rotateY(180deg);
+            -ms-transform: rotateY(180deg);
+            transform: rotateY(180deg);
+            
+        }
     }
 }
 
-@supports (transform: rotateY(180deg)) {
-    .layout-history-beaches1 .flip-pictures:hover .pictures-beaches {
-        -webkit-transform: rotateY(-180deg);
-        -ms-transform: rotateY(-180deg);
-        transform: rotateY(-180deg);
-        
-    }
-}
-
-@supports (transform: rotateY(-180deg)) {
-    .layout-history-beaches2 .flip-pictures:hover .pictures-beaches {
-        -webkit-transform: rotateY(180deg);
-        -ms-transform: rotateY(180deg);
-        transform: rotateY(180deg);
-
-        
-    }
-}
-
-@supports (transition-duration: 2s) {
-    .flip-pictures:hover .pictures-beaches > .imagem-frente > img {
-        
-        
-        transition-duration: 2s;
-    }
-}
-
-@supports (filter: blur(1px)) {
-    .flip-pictures:hover .pictures-beaches > .imagem-frente > img {
-        -webkit-filter: blur(5px);
-        -ms-filter: blur(5px);
-        filter: blur(5px);
-    }
-}
-
-@supports (backface-visibility: hidden) {
-    .imagem-frente, .imagem-atras {
-        position: absolute;
-        width: 100%;
-        height: 100%;        
-        -webkit-backface-visibility: hidden;
-        -ms-backface-visibility: hidden;
-        backface-visibility: hidden;
-        
-    }
-}
-
-@supports (transform: rotateY(180deg)) {
-    .imagem-atras {
-        -webkit-transform: rotateY(180deg);
-        -ms-transform: rotateY(180deg);
-        transform: rotateY(180deg);
-        
-    }
 }

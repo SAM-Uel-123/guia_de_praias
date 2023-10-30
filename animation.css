@@ -13,6 +13,10 @@
             max-width: 200px;
             min-width: 120px;
             -webkit-perspective: 1001px;
+<<<<<<< HEAD
+=======
+            -moz-perspective: 1001px;
+>>>>>>> 631f23d (css improvements)
             -ms-perspective: 1001px;
             perspective: 1001px;
             background-color: transparent;
@@ -26,6 +30,10 @@
             width: 100%;
             height: 100%;
             -webkit-transition-duration: 0.8s;
+<<<<<<< HEAD
+=======
+            -moz-transition-duration: 0.8s;
+>>>>>>> 631f23d (css improvements)
             -ms-transition-duration: 0.8s;
             transition-duration: 0.8s;
             
@@ -38,6 +46,10 @@
             width: 100%;
             height: 100%;
             -webkit-transform-style: preserve-3d;
+<<<<<<< HEAD
+=======
+            -moz-transform-style: preserve-3d;
+>>>>>>> 631f23d (css improvements)
             -ms-transform-style: preserve-3d;
             transform-style: preserve-3d;
         }
@@ -46,6 +58,10 @@
     @supports (transform: rotateY(180deg)) {
         .layout-history-beaches1 .flip-pictures:hover .pictures-beaches {
             -webkit-transform: rotateY(-180deg);
+<<<<<<< HEAD
+=======
+            -moz-transform: rotateY(180deg);
+>>>>>>> 631f23d (css improvements)
             -ms-transform: rotateY(-180deg);
             transform: rotateY(-180deg);
             
@@ -55,6 +71,10 @@
     @supports (transform: rotateY(-180deg)) {
         .layout-history-beaches2 .flip-pictures:hover .pictures-beaches {
             -webkit-transform: rotateY(180deg);
+<<<<<<< HEAD
+=======
+            -moz-transform: rotateY(180deg);
+>>>>>>> 631f23d (css improvements)
             -ms-transform: rotateY(180deg);
             transform: rotateY(180deg);
 
@@ -64,6 +84,12 @@
 
     @supports (transition-duration: 2s) {
         .flip-pictures:hover .pictures-beaches > .imagem-frente > img {
+<<<<<<< HEAD
+=======
+            -webkit-transition-duration: 2s;
+            -moz-transition-duration: 2s;
+            -ms-transition-duration: 2s;
+>>>>>>> 631f23d (css improvements)
             transition-duration: 2s;
         }
     }
@@ -71,6 +97,10 @@
     @supports (filter: blur(1px)) {
         .flip-pictures:hover .pictures-beaches > .imagem-frente > img {
             -webkit-filter: blur(5px);
+<<<<<<< HEAD
+=======
+            -moz-filter: blur(5px);
+>>>>>>> 631f23d (css improvements)
             -ms-filter: blur(5px);
             filter: blur(5px);
         }
@@ -82,6 +112,10 @@
             width: 100%;
             height: 100%;        
             -webkit-backface-visibility: hidden;
+<<<<<<< HEAD
+=======
+            -moz-backface-visibility: hidden;
+>>>>>>> 631f23d (css improvements)
             -ms-backface-visibility: hidden;
             backface-visibility: hidden;
             
@@ -91,6 +125,10 @@
     @supports (transform: rotateY(180deg)) {
         .imagem-atras {
             -webkit-transform: rotateY(180deg);
+<<<<<<< HEAD
+=======
+            -moz-transform: rotateY(180deg);
+>>>>>>> 631f23d (css improvements)
             -ms-transform: rotateY(180deg);
             transform: rotateY(180deg);
             
@@ -105,6 +143,10 @@
         .flip-pictures {
             display: inline-block;
             position: relative;
+<<<<<<< HEAD
+=======
+            background-color: transparent;
+>>>>>>> 631f23d (css improvements)
             width: 30vw;
             height: 30vw;
             max-width: 400px;
@@ -112,7 +154,11 @@
             -webkit-perspective: 1000px;
             -ms-perspective: 1000px;
             perspective: 1000px;
+<<<<<<< HEAD
             background-color: transparent;
+=======
+            
+>>>>>>> 631f23d (css improvements)
         }
 
     }
@@ -177,6 +223,10 @@
 
     @supports (backface-visibility: hidden) {
         .imagem-frente, .imagem-atras {
+<<<<<<< HEAD
+=======
+            display: inline-block;
+>>>>>>> 631f23d (css improvements)
             position: absolute;
             width: 100%;
             height: 100%;        
@@ -185,8 +235,22 @@
             backface-visibility: hidden;
             
         }
+<<<<<<< HEAD
     }
 
+=======
+
+
+        .link-about {
+            -webkit-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            backface-visibility: hidden;
+
+        }
+    }
+
+
+>>>>>>> 631f23d (css improvements)
     @supports (transform: rotateY(180deg)) {
         .imagem-atras {
             -webkit-transform: rotateY(180deg);
@@ -294,6 +358,9 @@
             
         }
     }
+<<<<<<< HEAD
 }
 
+=======
+>>>>>>> 631f23d (css improvements)
 }

@@ -6,6 +6,10 @@
 
 :root {
     --color-font-navbar: yellow;
+<<<<<<< HEAD
+=======
+    --color-bg-layout: rgb(187, 187, 187);
+>>>>>>> 631f23d (css improvements)
 }
 
 body {
@@ -162,9 +166,14 @@ nav {
 
 
 
+<<<<<<< HEAD
 
 @media screen and (min-width: 1501px) {
 
+=======
+/*
+@media screen and (min-width: 1501px) {
+>>>>>>> 631f23d (css improvements)
     section {
         background-color: white;
         max-width: 90vw;
@@ -281,7 +290,141 @@ nav {
     Monitor de computador comum
 */
 
+<<<<<<< HEAD
 @media screen and (max-width: 1500px) {
+=======
+
+@media screen and (min-width: 1001px) {
+    .link-about {
+        display: block;
+        position: relative;
+        text-decoration: none;
+        background-color: green;
+        color: white;
+        border-radius: 30px;
+        border-color: transparent;
+        font-size: 2vw;
+        
+        padding: 15px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.495);
+    
+        
+
+    }
+
+
+    
+    .link-about:hover {
+        background-color: rgb(0, 60, 0);
+        color: rgb(199, 199, 199);
+        transition: 0.3s;
+    }
+    
+    
+    #icone-principal1 {
+        display: inline-block;
+        position: relative;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        width: 10vw;
+        height: 25vh;
+        border-radius: 50%;
+        top: -1px;
+        
+    }
+    
+    #icone-principal{
+        display: inline-block;
+        position: relative;
+
+        width: 30vw;
+        height: 30vh;
+        text-decoration: none;
+        padding: 10px;
+        top: -7px;
+    }
+    
+    #icone-principal > p {
+        display: inline-block;
+        position: relative;
+        font-size: 3.5vw;
+        
+        color: var(--color-font-navbar);
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.227);
+        top: -30%;
+        left: 2%;
+        
+    }
+    
+    #icone-principal > p:hover {
+        color: rgb(189, 189, 189)
+    }
+
+    nav {
+        display: inline-block;
+        position: relative;
+
+        width: 98vw;
+        height: 26vh;
+        top: 10px;
+        padding: 20px;
+        background-color: rgb(84, 211, 84);
+        padding-right: 50px;
+        
+
+    }
+    
+    
+    
+    .nav-list {
+        display: inline-block;
+        position: relative;
+        list-style: none;
+        display: inline-block;    
+        top: -20vh;
+        
+    }
+    
+    .nav-list li{
+        display: inline-block;
+        position: relative;
+        width: 200px;
+        
+        letter-spacing: 1px;
+
+        font-size: 3.5vw;
+
+        left: -20%;
+        
+    }
+    
+    .nav-list li a {
+        display: inline-block;
+        position: relative;
+        width: 100px;
+        text-decoration: none;
+        top: 9vh;
+        left: 55vw;
+        color: var(--color-font-navbar);
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.508);
+    }
+    
+    
+    .nav-list > li a:hover {
+        text-decoration: underline;
+        color: rgb(189, 189, 189);
+        
+    }
+    #mini-introducao {
+        font-size: 3vw;
+    }
+
+    .btn-about {
+        width: 20vw;
+        height: 18vh;
+        font-size: 3vw;
+    }
+>>>>>>> 631f23d (css improvements)
 
     section {
         display: block;
@@ -290,8 +433,16 @@ nav {
         margin: auto;
         border-radius: 0px 0px 50px 50px;
 
+<<<<<<< HEAD
         max-width: 95vw;
         width: 95vw;
+=======
+        min-width: 50vw;
+        max-width: 95vw;
+        width: 95vw;
+
+        min-height: 60vh;
+>>>>>>> 631f23d (css improvements)
         max-height: max-content;
         height: max-content;
 
@@ -303,15 +454,34 @@ nav {
         display: inline-block;
         position: relative;
 
+<<<<<<< HEAD
         max-width: 90vw;
+=======
+        max-width: 95vw;
+>>>>>>> 631f23d (css improvements)
         width: 95vw;
 
         min-height: 40vh;
         max-height: 90vh;
         height: 65vh;
 
+<<<<<<< HEAD
         margin: 50px 30px 50px 30px;
 
+=======
+
+        padding: 20px 0px 10px 0px;
+        margin: 50px 30px 50px 0px;
+
+    }
+
+
+    .layout-history-beaches2 {
+        background-color: var(--color-bg-layout);
+        
+        
+        
+>>>>>>> 631f23d (css improvements)
     }
 
     .history-border {
@@ -413,6 +583,10 @@ nav {
         height: 60vh ;
 
         top: 0px;
+<<<<<<< HEAD
+=======
+        left: 4%;
+>>>>>>> 631f23d (css improvements)
     }
 
     #descricao-praias01 {
@@ -422,7 +596,11 @@ nav {
         height: 56vh;
 
         top: 0px;
+<<<<<<< HEAD
         left: 5%;
+=======
+        left: 10%;
+>>>>>>> 631f23d (css improvements)
         padding: 10px;
         
 
@@ -445,7 +623,11 @@ nav {
 
         min-height: 20vh;
         max-height: 90vh;
+<<<<<<< HEAD
         height: 82vh ;
+=======
+        height: 60vh ;
+>>>>>>> 631f23d (css improvements)
 
         top: 0px;
         left: 50%;
@@ -465,7 +647,11 @@ nav {
         max-height: 90vh;
         height: 56vh;
 
+<<<<<<< HEAD
         top: -25%;
+=======
+        top: 0px;
+>>>>>>> 631f23d (css improvements)
         left: -43%;
     }
 
@@ -489,18 +675,32 @@ nav {
         height: 60vh;
 
         top: 0px;
+<<<<<<< HEAD
         left: 0px;
+=======
+        left: 4%;
+>>>>>>> 631f23d (css improvements)
     }
 
     #descricao-praias03 {
         display: inline-block;
         position: relative;
+<<<<<<< HEAD
+=======
+
+        overflow-y: scroll;
+
+>>>>>>> 631f23d (css improvements)
         max-width: 70vw;
         width: 35vw;
         height: 56vh;
 
         top: 0px;
+<<<<<<< HEAD
         left: 6%;
+=======
+        left: 10%;
+>>>>>>> 631f23d (css improvements)
         
     }
 
@@ -518,10 +718,17 @@ nav {
 
         
     }
+<<<<<<< HEAD
 
 
 }
 
+=======
+}
+
+
+
+>>>>>>> 631f23d (css improvements)
 /*
     Celulares e Tablets
 */
@@ -533,6 +740,10 @@ nav {
         
         display: block;
         position: relative;
+<<<<<<< HEAD
+=======
+        background-color: white;
+>>>>>>> 631f23d (css improvements)
 
         max-width: 95vw;
         width: 95vw;
@@ -547,7 +758,11 @@ nav {
     .layout-history-beaches1 , .layout-history-beaches2{
         display: inline-block;
         position: relative;
+<<<<<<< HEAD
         margin: 100px 30px 50px 30px;
+=======
+        margin: 100px 30px 50px 0px;
+>>>>>>> 631f23d (css improvements)
         
         max-width: 95vw;
         width: 95vw;
@@ -555,9 +770,20 @@ nav {
         max-height: max-content;
         height: max-content;
 
+<<<<<<< HEAD
         margin-bottom: 50px;
 
 
+=======
+        padding: 30px 0px 30px 0px;
+        margin-bottom: 50px;
+
+    }
+
+    .layout-history-beaches2 {
+        background-color: var(--color-bg-layout);
+        
+>>>>>>> 631f23d (css improvements)
     }
 
     .miniaturas, .miniaturas2, .imagem-atras, .imagem-frente {
@@ -637,7 +863,11 @@ nav {
         height: 35vh;
 
         top: 0px;
+<<<<<<< HEAD
         left: 0px ;
+=======
+        left: 4% ;
+>>>>>>> 631f23d (css improvements)
     }
 
     #descricao-praias01 {
@@ -652,7 +882,11 @@ nav {
 
         overflow-y: scroll;
         top: 0px;
+<<<<<<< HEAD
         left: 5px;
+=======
+        left: 5%;
+>>>>>>> 631f23d (css improvements)
         padding: 10px;
 
     }
@@ -674,6 +908,12 @@ nav {
 
 
     #descricao-praias02 {
+<<<<<<< HEAD
+=======
+
+        overflow-y: scroll;
+
+>>>>>>> 631f23d (css improvements)
         max-width: 90vw;
         width: 30vw;
         
@@ -682,7 +922,11 @@ nav {
         height: 32vh;
 
         top: 0px;
+<<<<<<< HEAD
         left: -50%;
+=======
+        left: -40%;
+>>>>>>> 631f23d (css improvements)
     }
 
     #descricao-praias02 > p {
@@ -696,17 +940,31 @@ nav {
         height: 35vh;
 
         top: 0px;
+<<<<<<< HEAD
         left: 0px;
+=======
+        left: 4%;
+>>>>>>> 631f23d (css improvements)
     }
 
 
     #descricao-praias03 {
+<<<<<<< HEAD
+=======
+
+        overflow-y: scroll;
+
+>>>>>>> 631f23d (css improvements)
         max-width: 50vw;
         width: 30vw;
         height: 32vh;
 
         top: 0px;
+<<<<<<< HEAD
         left: 1%;
+=======
+        left: 6%;
+>>>>>>> 631f23d (css improvements)
     }
 
 
@@ -726,9 +984,16 @@ nav {
     section {
         display: block;
         position: relative;
+<<<<<<< HEAD
 
         max-width: 95vw;
         width: 95vw;
+=======
+        background-color: white;
+
+        max-width: 100vw;
+        width: 100vw;
+>>>>>>> 631f23d (css improvements)
         max-height: max-content;
         height: max-content;
         margin: auto;
@@ -747,6 +1012,7 @@ nav {
         width: 95vw;
 
         min-height: 40vh;
+<<<<<<< HEAD
         max-height: max-content;
         height: max-content;
 
@@ -765,6 +1031,37 @@ nav {
         min-height: 18vh;
         max-height: 45vh;
         height: 25vh;
+=======
+        max-height: 200vh;
+        height: max-content;
+        padding: 50px 0px 50px 0px;
+        margin-bottom: 100px;
+
+    }
+
+    .layout-history-beaches2 {
+
+        position: relative;
+        background-color: var(--color-bg-layout);
+        margin: 0px;
+        padding-left: 30px;
+        
+        
+    }
+
+    .miniaturas, .miniaturas2, .imagem-atras{
+        display:  block;
+        position: relative;
+
+        min-width: 30vw;
+        max-width: 95vw ;
+        width: 90vw ;
+
+
+        min-height: 18vh;
+        max-height: 90vh;
+        height: 90vh ;
+>>>>>>> 631f23d (css improvements)
 
     }
 
@@ -804,7 +1101,10 @@ nav {
         position: relative;
         border: 3px dashed black;
         padding: 10px;
+<<<<<<< HEAD
         width: 35vw;
+=======
+>>>>>>> 631f23d (css improvements)
 
         top: 0px;
         left: 0px;
@@ -820,7 +1120,11 @@ nav {
 
 
     .descricao-praias2 {
+<<<<<<< HEAD
         display: inline-block;
+=======
+        display: b;
+>>>>>>> 631f23d (css improvements)
         position: relative;
         overflow-y: scroll;
 
@@ -830,6 +1134,7 @@ nav {
 
 
     #flip-pictures01 {
+<<<<<<< HEAD
         display: inline-block;
         position: relative;
 
@@ -840,12 +1145,25 @@ nav {
         min-height: 10vh;
         max-height: 40vh;
         height: 25vh;
+=======
+        display: in;
+        position: relative;
+
+        min-width: 30vw;
+        max-width: 90vw;
+        width: 90vw;
+
+        min-height: 10vh;
+        max-height: 90vh;
+        height: 90vh;
+>>>>>>> 631f23d (css improvements)
 
         top: 0px;
         left: 0px;
     }
 
     #descricao-praias01 {
+<<<<<<< HEAD
         display: inline-block;
         position: relative;
 
@@ -861,6 +1179,23 @@ nav {
         overflow-y: scroll;
 
         top: 0px;
+=======
+        display: block;
+        position: relative;
+
+        min-width: 20vw;
+        max-width: 90vw;
+        
+        width: 84vw;
+
+
+        max-height: 90vh;
+        height: 50vh;
+
+        overflow-y: scroll;
+
+        top: 10px;
+>>>>>>> 631f23d (css improvements)
         left: 5px;
         padding: 10px;
 
@@ -868,16 +1203,25 @@ nav {
 
 
     #descricao-praias01 > p{
+<<<<<<< HEAD
         display: inline-block;
         position: relative;
         max-width: 45vw;
         width: max-content;
         height: max-content;
+=======
+        display: block;
+        position: relative;
+        max-width: 84vw;
+        width: max-content;
+        height: 60vh;
+>>>>>>> 631f23d (css improvements)
 
     }
 
 
     #flip-pictures02 {
+<<<<<<< HEAD
         display: inline-block;
         position: relative;
         min-width: 30vw;
@@ -890,10 +1234,25 @@ nav {
 
         top: 0px;
         left: 48%;
+=======
+        display: block;
+        position: relative;
+        min-width: 30vw;
+        max-width: 90vw;
+        width: 90vw;
+
+        min-height: 20vh;
+        max-height: 90vh;
+        height: 90vh;
+
+        top: 0%;
+        left: 0%;
+>>>>>>> 631f23d (css improvements)
     }
 
 
     #descricao-praias02 {
+<<<<<<< HEAD
         display: inline-block;
         position: relative;
         width: 35vw;
@@ -903,39 +1262,97 @@ nav {
         height: 22vh;
         top: 0px;
         left: -50%;
+=======
+        display: block;
+        position: relative;
+        
+
+        min-height: 20vh;
+        max-height: 90vh;
+        width: 84vw;
+
+        min-height: 20vh;
+        max-height: 90vh;
+        height: 50vh;
+
+        top: 20px;
+        left: 0%;
+>>>>>>> 631f23d (css improvements)
     }
 
     #descricao-praias02 > p {
         display: inline-block;
         position: relative;
+<<<<<<< HEAD
         max-width: 40vw;
         width: 36vw;
+=======
+        max-width: 90vw;
+        width: 84vw;
+>>>>>>> 631f23d (css improvements)
 
     }
 
     #flip-pictures03 {
+<<<<<<< HEAD
         display: inline-block;
         position: relative;
 
         min-height: 20vh;
         max-height: 60vh;
         height: 25vh;
+=======
+        display: block;
+        position: relative;
+
+        min-width: 50vw;
+        max-width: 90vw;
+        width: 90vw;
+
+        min-height: 20vh;
+        max-height: 90vh;
+        height: 90vh;
+
+        top: 0px;
+>>>>>>> 631f23d (css improvements)
         left: 0px;
     }
 
 
     #descricao-praias03 {
+<<<<<<< HEAD
         max-width: 50vw;
         width: 35vw;
 
         height: 22vh;
         left: 1%;
+=======
+        display: block;
+        position: relative;
+        
+        overflow-y: scroll;
+
+        max-width: 90vw;
+        width: 84vw;
+        height: 50vh;
+
+
+        top: 20px;
+        left: 0%;
+>>>>>>> 631f23d (css improvements)
     }
 
 
     #descricao-praias03 > p {
+<<<<<<< HEAD
         max-width: 90vw;
         width: 45vw;
+=======
+        position: relative;
+        overflow-y: scroll;
+        max-width: 90vw;
+        width: 84vw;
+>>>>>>> 631f23d (css improvements)
     }
 
 
@@ -960,6 +1377,7 @@ nav {
         display: inline-block;
         position: relative;
 
+<<<<<<< HEAD
         max-width: 95vw;
         width: 95vw;
         
@@ -969,11 +1387,32 @@ nav {
         
         margin: 20px 10px 00px 10px;
 
+=======
+        max-width: 100vw;
+        width: 100%;
+        
+        min-height: 60vh;
+        max-height: 100vh;
+        height: 100vh;
+
+        padding: 20px 10px 60px 10px;
+
+        margin: 20px 0px 20px 0px;
+
+    }
+
+    .layout-history-beaches2 {
+        background-color: var(--color-bg-layout);
+>>>>>>> 631f23d (css improvements)
     }
 
 
 
+<<<<<<< HEAD
     .miniaturas, .miniaturas2, .imagem-atras, .imagem-frente {
+=======
+    .miniaturas, .miniaturas2, .imagem-atras {
+>>>>>>> 631f23d (css improvements)
         display: inline-block;
         position: relative;
 
@@ -981,9 +1420,15 @@ nav {
         max-width: 95vw;
         width: 95vw;
 
+<<<<<<< HEAD
         min-height: 50vw;
         max-width: 95vw;
         height: 80vh;
+=======
+        min-height: 20vh;
+        max-height: 95vh;
+        height: 60vh;
+>>>>>>> 631f23d (css improvements)
         margin: 0px;
 
         top: 0px;
@@ -1022,11 +1467,19 @@ nav {
         display: inline-block;
         position: relative;
 
+<<<<<<< HEAD
+=======
+        min-width: 20vw;
+>>>>>>> 631f23d (css improvements)
         max-width: 95vw;
         width: 95vw;
 
         max-height: 95vh;
+<<<<<<< HEAD
         height: 90vh;
+=======
+        height: 60vh;
+>>>>>>> 631f23d (css improvements)
 
         
     }
@@ -1037,9 +1490,15 @@ nav {
         border: 2px dashed black;
         max-width: 95vw;
         width: 90vw;
+<<<<<<< HEAD
         
         max-height: 100vh;
         height: 90vh;
+=======
+        overflow-y: scroll;
+        max-height: 100vh;
+        height: 60vh;
+>>>>>>> 631f23d (css improvements)
 
 
         font-size: 3vw;
@@ -1054,6 +1513,11 @@ nav {
         display: inline-block;
         position: relative;
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 631f23d (css improvements)
         max-width: 95vw;
         width: 90vw;
         height: max-content;
@@ -1071,8 +1535,15 @@ nav {
 
         min-height: 30vh;
         max-height: 95vh;
+<<<<<<< HEAD
         height: 45vh;
         left: 0px;
+=======
+        height: 60vh;
+        left: 0px;
+
+        
+>>>>>>> 631f23d (css improvements)
         
     }
 
@@ -1084,7 +1555,11 @@ nav {
         width: 88vw;
 
         min-height: 15vh;
+<<<<<<< HEAD
         max-height: 40vh;
+=======
+        max-height: 80vh;
+>>>>>>> 631f23d (css improvements)
         height: max-content;
 
         top: 30px;
@@ -1096,6 +1571,12 @@ nav {
         max-width: 95vw;
         width: 90vw;
 
+<<<<<<< HEAD
+=======
+        max-height: 90vh;
+        height: max-content;
+
+>>>>>>> 631f23d (css improvements)
 
     }
 
@@ -1104,11 +1585,19 @@ nav {
         position: relative;
     
         max-width: 95vw;
+<<<<<<< HEAD
         width: 95vw;
 
         min-height: 30vh;
         max-height: 95vh;
         height: 45vh;
+=======
+        width: 60vw;
+
+        min-height: 30vh;
+        max-height: 95vh;
+        height: 60vh;
+>>>>>>> 631f23d (css improvements)
         left: 0px;
         
     }
@@ -1140,7 +1629,11 @@ nav {
         width: 95vw;
 
         max-height: 90vh;
+<<<<<<< HEAD
         height: 45vh;
+=======
+        height: 60vh;
+>>>>>>> 631f23d (css improvements)
 
         left: 0px;
         
@@ -1194,6 +1687,13 @@ nav {
         height: 60vh;
     }
 
+<<<<<<< HEAD
+=======
+    .layout-history-beaches2 {
+        background-color: var(--color-bg-layout);
+    }
+
+>>>>>>> 631f23d (css improvements)
     .history-border {
         display: inline-block;
         position: relative;
@@ -1271,6 +1771,12 @@ nav {
         max-width: 90vw;
         width: 90vw;
 
+<<<<<<< HEAD
+=======
+        min-height: 20vh;
+        max-height: 90vh;
+        height: 25vh;
+>>>>>>> 631f23d (css improvements)
 
         top: 0px;
         left: 0px;
@@ -1281,7 +1787,11 @@ nav {
         position: relative;
         min-width: 5vw;
         max-width: 90vw;
+<<<<<<< HEAD
         width: 81vw;
+=======
+        width: 85vw;
+>>>>>>> 631f23d (css improvements)
 
         min-height: 5vh;
         max-height: 30vh;
@@ -1306,6 +1816,12 @@ nav {
         max-width: 90vw;
         width: 90vw;
 
+<<<<<<< HEAD
+=======
+        min-height: 20vh;
+        max-height: 80vh;
+        height: 25vh;
+>>>>>>> 631f23d (css improvements)
 
         top: 0px;
         left: 0px;
@@ -1316,7 +1832,11 @@ nav {
         position: relative;
         min-width: 5vw;
         max-width: 90vw;
+<<<<<<< HEAD
         width: 75vw;
+=======
+        width: 80vw;
+>>>>>>> 631f23d (css improvements)
 
         min-height: 5vh;
         max-height: 30vh;
@@ -1340,6 +1860,13 @@ nav {
         display: inline-block;
         position: relative;
 
+<<<<<<< HEAD
+=======
+        min-height: 20vh;
+        max-height: 80vh;
+        height: 25vh;
+
+>>>>>>> 631f23d (css improvements)
         max-width: 90vw;
         width: 90vw;
 
@@ -1353,7 +1880,11 @@ nav {
         position: relative;
         min-width: 5vw;
         max-width: 90vw;
+<<<<<<< HEAD
         width: 82vw;
+=======
+        width: 85vw;
+>>>>>>> 631f23d (css improvements)
 
         min-height: 5vh;
         max-height: 30vh;

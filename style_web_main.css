@@ -994,15 +994,23 @@ footer {
 
     footer {
         display: inline-block;
-        position: relative;
-
-        
+        background-color: black;
+        color: white;
+        margin: auto;
+        width: 99vw;
+        min-width: 80px;
+        padding: 20px;
+        text-align: center;
+        font-size: 2vw;
+        top: auto;
     }
-
+    
     footer > p {
-        width: max-content;
+        text-align: center;
+        font-size: 3vw;
+        margin: auto;
+
     }
-}
 
 }
 
@@ -1327,7 +1335,25 @@ footer {
         max-width: 90vw;
         width: 45vw;
     }
+    footer {
+        display: inline-block;
+        background-color: black;
+        color: white;
+        margin: auto;
+        width: 99vw;
+        min-width: 80px;
+        padding: 20px;
+        text-align: center;
+        font-size: 2vw;
+        top: auto;
+    }
+    
+    footer > p {
+        text-align: center;
+        font-size: 3vw;
+        margin: auto;
 
+    }
 
 }
 
@@ -1694,7 +1720,25 @@ footer {
         max-width: 90vw;
         width: 84vw;
     }
+    footer {
+        display: inline-block;
+        background-color: black;
+        color: white;
+        margin: auto;
+        width: 99vw;
+        min-width: 80px;
+        padding: 20px;
+        text-align: center;
+        font-size: 2vw;
+        top: auto;
+    }
+    
+    footer > p {
+        text-align: center;
+        font-size: 3vw;
+        margin: auto;
 
+    }
 
 }
 
@@ -1862,6 +1906,7 @@ footer {
         min-height: 20vh;
         max-height: 95vh;
         height: 60vh;
+
         margin: 0px;
 
         top: 0px;
@@ -1951,8 +1996,9 @@ footer {
         width: 95vw;
 
         min-height: 30vh;
-        max-height: 95vh;
-        height: 10vh;
+        max-height: 75vh;
+        height: 60vh;
+
         left: 0px;
 
         
@@ -1989,8 +2035,9 @@ footer {
         display: inline-block;
         position: relative;
     
+        min-width: 30vw;
         max-width: 95vw;
-        width: 60vw;
+        width: 95vw;
 
         min-height: 30vh;
         max-height: 95vh;
@@ -2047,6 +2094,27 @@ footer {
         max-width: 95vw;
         width: 90vw;
     }
+
+    footer {
+        display: inline-block;
+        background-color: black;
+        color: white;
+        margin: auto;
+        width: 99vw;
+        min-width: 80px;
+        padding: 20px;
+        text-align: center;
+        font-size: 2vw;
+        top: auto;
+    }
+    
+    footer > p {
+        text-align: center;
+        font-size: 3vw;
+        margin: auto;
+
+    }
+
 }
 
 
@@ -2386,7 +2454,25 @@ footer {
         width: 80vw;
         font-size: 8vw;
     }
+    footer {
+        display: inline-block;
+        background-color: black;
+        color: white;
+        margin: auto;
+        width: 99vw;
+        min-width: 80px;
+        padding: 20px;
+        text-align: center;
+        font-size: 2vw;
+        top: auto;
+    }
+    
+    footer > p {
+        text-align: center;
+        font-size: 3vw;
+        margin: auto;
 
+    }
 }
 
 

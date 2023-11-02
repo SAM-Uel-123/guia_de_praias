@@ -17,10 +17,10 @@
 }
 
 
-html, head, body {
+html, head, body, header {
     background-color: rgba(94, 197, 94, 0.707);
     width: 100vw;
-    height: 100vh;
+    height: max-content;
 
     
 }
@@ -280,9 +280,9 @@ footer {
         max-height: 100vh;
         height: 300px;
         
-        padding: 20px;
+        padding: 20px 0px 20px 20px;
         background-color: rgb(84, 211, 84);
-        padding-right: 50px;
+        
         
 
     }
@@ -592,7 +592,7 @@ footer {
     footer {
         display: inline-block;
         position: relative;
-        width: 98vw;
+        width: 97vw;
 
     }
     footer > p {
@@ -1072,9 +1072,9 @@ footer {
         min-height: 180px;
         height: 12vh;
 
-        padding: 20px;
+        padding: 20px 0px 20px 20px;
         background-color: rgb(84, 211, 84);
-        padding-right: 50px;
+        
         
 
     }
@@ -1089,8 +1089,8 @@ footer {
         width: 30vw;
         height: 16vh;
         
-        top: -60%;
-        left: 52%;
+        top: 0px;
+        left: 35%;
     }
     
     .nav-list li{
@@ -1113,7 +1113,7 @@ footer {
         width: 100px;
         text-decoration: none;
         
-        top: 100px;
+        top: 0px;
         color: var(--color-font-navbar);
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.508);
     }
@@ -1335,7 +1335,7 @@ footer {
         background-color: black;
         color: white;
         margin: auto;
-        width: 99vw;
+        width: 96vw;
         min-width: 80px;
         padding: 20px;
         text-align: center;
@@ -1407,14 +1407,14 @@ footer {
         display: inline-block;
         position: relative;
 
-        width: 98vw;
+        width: 95vw;
 
         min-height: 120px;
         height: 20vh;
         
         padding: 20px;
         background-color: rgb(84, 211, 84);
-        padding-right: 50px;
+        padding-right: 0px;
         
 
     }
@@ -1426,20 +1426,25 @@ footer {
         position: relative;
         list-style: none;
         display: inline-block;    
+
+        width: 10vw;
+        height: 10vh;
+
         top: -30px;
+        left: -100px;
         
     }
     
     .nav-list li{
         display: inline-block;
         position: relative;
-        width: 200px;
+        width: 50px;
         
         letter-spacing: 1px;
 
         font-size: 3.5vw;
 
-        left: -10%;
+        left: -50%;
         
     }
     
@@ -1450,7 +1455,7 @@ footer {
         text-decoration: none;
         
         top: -30px;
-        left: 35vw;
+        left: 40vw;
         color: var(--color-font-navbar);
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.508);
     }
@@ -1741,6 +1746,13 @@ footer {
 
 @media screen and (max-width: 500px){
 
+    .imagem {
+        width: 100vw;
+        height: 100vh;
+        
+
+    }
+
     #icone-principal1 {
         display: inline-block;
         position: relative;
@@ -1790,12 +1802,12 @@ footer {
         display: inline-block;
         position: relative;
 
-        width: 98vw;
+        width: 94vw;
         height: 16vh;
         
         padding: 20px;
         background-color: rgb(84, 211, 84);
-        padding-right: 50px;
+        padding-right: 0px;
         
 
     }
@@ -1818,7 +1830,7 @@ footer {
     .nav-list li{
         display: inline-block;
         position: relative;
-        width: 200px;
+        width: 50px;
         
         letter-spacing: 1px;
 
@@ -1878,7 +1890,7 @@ footer {
         max-height: 100vh;
         height: 100vh;
 
-        padding: 20px 10px 60px 10px;
+        padding: 20px 0px 60px 0px;
 
         margin: 20px 0px 20px 0px;
 
@@ -2095,7 +2107,7 @@ footer {
         background-color: black;
         color: white;
         margin: auto;
-        width: 99vw;
+        width: 91vw;
         min-width: 80px;
         padding: 20px;
         text-align: center;

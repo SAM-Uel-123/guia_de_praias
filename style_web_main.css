@@ -4,25 +4,24 @@
     outline: 0px;
     border: 0px;
 
+
+
 }
 
 
 
-html {
-    width: 97vw;
-}
+
 :root {
     --color-font-navbar: yellow;
     --color-bg-layout: rgb(187, 187, 187);
 }
 
 
-body {
+html, head, body {
     background-color: rgba(94, 197, 94, 0.707);
-    width: 97vw;
-    height: 97vh;
+    width: 100vw;
+    height: 100vh;
 
-    overflow-x: hidden;
     
 }
 
@@ -199,10 +198,6 @@ footer {
 
 @media screen and (min-width: 1301px) {
 
-    header {
-        width: 90vw;
-
-    }
 
     .link-about {
         display: block;

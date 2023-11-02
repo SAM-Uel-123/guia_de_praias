@@ -280,7 +280,10 @@ footer {
         position: relative;
 
         width: 98vw;
-        height: 38vh;
+
+        min-height: 90px;
+        max-height: 100vh;
+        height: 300px;
         
         padding: 20px;
         background-color: rgb(84, 211, 84);
@@ -296,7 +299,7 @@ footer {
         position: relative;
         list-style: none;
         display: inline-block;    
-        top: -20vh;
+        top: -50px;
         
     }
     
@@ -318,8 +321,9 @@ footer {
         position: relative;
         width: 100px;
         text-decoration: none;
-        top: 9vh;
-        left: 41vw;
+        
+        top: -40px;
+        left: 39vw;
         color: var(--color-font-navbar);
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.508);
     }
@@ -666,7 +670,7 @@ footer {
 
         color: var(--color-font-navbar);
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.227);
-        top: -20%;
+        top: -60px;
         
         
     }
@@ -680,8 +684,10 @@ footer {
         position: relative;
 
         width: 98vw;
+
+        min-height: 150px;
         height: 26vh;
-        top: 10px;
+
         padding: 20px;
         background-color: rgb(84, 211, 84);
         padding-right: 50px;
@@ -696,7 +702,7 @@ footer {
         position: relative;
         list-style: none;
         display: inline-block;    
-        top: -20vh;
+        top: -50px;
         
     }
     
@@ -718,8 +724,8 @@ footer {
         position: relative;
         width: 100px;
         text-decoration: none;
-        top: 9vh;
-        left: 55vw;
+        top: -20px;
+        left: 25vw;
         color: var(--color-font-navbar);
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.508);
     }
@@ -1059,6 +1065,8 @@ footer {
         position: relative;
 
         width: 98vw;
+
+        min-height: 180px;
         height: 12vh;
 
         padding: 20px;
@@ -1102,7 +1110,7 @@ footer {
         width: 100px;
         text-decoration: none;
         
-        
+        top: 100px;
         color: var(--color-font-navbar);
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.508);
     }
@@ -1328,6 +1336,119 @@ footer {
 */
 
 @media screen and (max-width: 600px){
+
+    #icone-principal1 {
+        display: inline-block;
+        position: relative;
+        margin-left: 1vw;
+        margin-right: 1vw;
+
+
+        width: 120px;
+        height: 120px;
+
+        border-radius: 50%;
+        top: -1px;
+        
+    }
+    
+    #icone-principal{
+        display: inline-block;
+        position: relative;
+
+        width: 45vw;
+        height: 30vh;
+        text-decoration: none;
+        padding: 10px;
+        top: -7px;
+    }
+    
+    #icone-principal > p {
+        display: inline-block;
+        position: relative;
+        font-size: 3.5vw;
+        
+        color: var(--color-font-navbar);
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.227);
+
+        
+
+        top: -30%;
+        left: 2%;
+        
+    }
+    
+    #icone-principal > p:hover {
+        color: rgb(189, 189, 189)
+    }
+
+    nav {
+        display: inline-block;
+        position: relative;
+
+        width: 98vw;
+
+        min-height: 120px;
+        height: 20vh;
+        
+        padding: 20px;
+        background-color: rgb(84, 211, 84);
+        padding-right: 50px;
+        
+
+    }
+    
+    
+    
+    .nav-list {
+        display: inline-block;
+        position: relative;
+        list-style: none;
+        display: inline-block;    
+        top: -30px;
+        
+    }
+    
+    .nav-list li{
+        display: inline-block;
+        position: relative;
+        width: 200px;
+        
+        letter-spacing: 1px;
+
+        font-size: 3.5vw;
+
+        left: -10%;
+        
+    }
+    
+    .nav-list li a {
+        display: inline-block;
+        position: relative;
+        width: 100px;
+        text-decoration: none;
+        
+        top: -30px;
+        left: 35vw;
+        color: var(--color-font-navbar);
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.508);
+    }
+    
+    
+    .nav-list > li a:hover {
+        text-decoration: underline;
+        color: rgb(189, 189, 189);
+        
+    }
+    #mini-introducao {
+        font-size: 3vw;
+    }
+
+    .btn-about {
+        width: 20vw;
+        height: 18vh;
+        font-size: 3vw;
+    }
     section {
         display: block;
         position: relative;
@@ -1581,6 +1702,121 @@ footer {
 
 @media screen and (max-width: 500px){
 
+    #icone-principal1 {
+        display: inline-block;
+        position: relative;
+        margin-left: 1vw;
+        margin-right: 1vw;
+
+
+        width: 100px;
+        height: 100px;
+
+        border-radius: 50%;
+        top: -1px;
+        
+    }
+    
+    #icone-principal{
+        display: inline-block;
+        position: relative;
+
+        width: 45vw;
+        height: 30vh;
+        text-decoration: none;
+        padding: 10px;
+        top: -7px;
+    }
+    
+    #icone-principal > p {
+        display: inline-block;
+        position: relative;
+        font-size: 3.5vw;
+        
+        color: var(--color-font-navbar);
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.227);
+
+        
+
+        top: -30%;
+        left: 2%;
+        
+    }
+    
+    #icone-principal > p:hover {
+        color: rgb(189, 189, 189)
+    }
+
+    nav {
+        display: inline-block;
+        position: relative;
+
+        width: 98vw;
+        height: 16vh;
+        
+        padding: 20px;
+        background-color: rgb(84, 211, 84);
+        padding-right: 50px;
+        
+
+    }
+    
+    
+    
+    .nav-list {
+        display: inline-block;
+        position: relative;
+        list-style: none;
+        display: inline-block;    
+
+        width: 5vw;
+
+        top: -30px;
+        left: 25%;
+        
+    }
+    
+    .nav-list li{
+        display: inline-block;
+        position: relative;
+        width: 200px;
+        
+        letter-spacing: 1px;
+
+        font-size: 3.5vw;
+
+        left: -10%;
+        
+    }
+    
+    .nav-list li a {
+        display: inline-block;
+        position: relative;
+        width: 100px;
+        text-decoration: none;
+        
+        top: -30px;
+        left: 0vw;
+        color: var(--color-font-navbar);
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.508);
+    }
+    
+    
+    .nav-list > li a:hover {
+        text-decoration: underline;
+        color: rgb(189, 189, 189);
+        
+    }
+    #mini-introducao {
+        font-size: 3vw;
+    }
+
+    .btn-about {
+        width: 20vw;
+        height: 18vh;
+        font-size: 3vw;
+    }
+
     section {
         display: block;
         position: relative;
@@ -1815,6 +2051,123 @@ footer {
 
 
 @media screen and (max-width: 300px){
+ #icone-principal1 {
+        display: inline-block;
+        position: relative;
+        margin-left: 1vw;
+        margin-right: 1vw;
+
+
+        width: 60px;
+        height: 60px;
+
+        border-radius: 50%;
+        top: -1px;
+        
+    }
+    
+    #icone-principal{
+        display: inline-block;
+        position: relative;
+
+        width: 45vw;
+        height: 30vh;
+        text-decoration: none;
+        padding: 10px;
+        top: -7px;
+    }
+    
+    #icone-principal > p {
+        display: inline-block;
+        position: relative;
+        font-size: 3.5vw;
+        
+        color: var(--color-font-navbar);
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.227);
+
+        
+
+        top: -30px;
+        left: 2%;
+        
+    }
+    
+    #icone-principal > p:hover {
+        color: rgb(189, 189, 189)
+    }
+
+    nav {
+        display: inline-block;
+        position: relative;
+
+        width: 98vw;
+
+        min-height: 70px;
+        height: 7vh;
+        
+        padding: 20px;
+        background-color: rgb(84, 211, 84);
+        padding-right: 50px;
+        
+
+    }
+    
+    
+    
+    .nav-list {
+        display: inline-block;
+        position: relative;
+        list-style: none;
+        display: inline-block;    
+
+        width: 10vw;
+
+        top: 0px;
+        left: 16%;
+        
+    }
+    
+    .nav-list li{
+        display: inline-block;
+        position: relative;
+        width: 200px;
+        
+        letter-spacing: 1px;
+
+        font-size: 3.5vw;
+
+        left: -10%;
+        
+    }
+    
+    .nav-list li a {
+        display: inline-block;
+        position: relative;
+        width: 100px;
+        text-decoration: none;
+        
+        top: -20px;
+        left: 0vw;
+        color: var(--color-font-navbar);
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.508);
+    }
+    
+    
+    .nav-list > li a:hover {
+        text-decoration: underline;
+        color: rgb(189, 189, 189);
+        
+    }
+    #mini-introducao {
+        font-size: 3vw;
+    }
+
+    .btn-about {
+        width: 20vw;
+        height: 18vh;
+        font-size: 3vw;
+    }
+
 
     #mini-introducao {
         font-size: 15vw;

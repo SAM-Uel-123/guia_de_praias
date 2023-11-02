@@ -6,6 +6,8 @@
 
 }
 
+
+
 html {
     width: 97vw;
 }
@@ -261,7 +263,10 @@ footer {
         
         color: var(--color-font-navbar);
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.227);
-        top: -35%;
+
+        
+
+        top: -100px;
         left: 2%;
         
     }
@@ -275,8 +280,8 @@ footer {
         position: relative;
 
         width: 98vw;
-        height: 28vh;
-        top: 10px;
+        height: 38vh;
+        
         padding: 20px;
         background-color: rgb(84, 211, 84);
         padding-right: 50px;

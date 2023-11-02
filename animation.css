@@ -3,7 +3,7 @@
 }
 
 
-@media screen and (min-width: 1201px) {
+@media screen and (max-width: 1901px) {
     @supports (perspective: 1201px) {
         .flip-pictures {
             display: inline-block;
@@ -17,7 +17,7 @@
             -webkit-perspective: 100vw;
             -moz-perspective: 100vw;
             -ms-perspective: 100vw;
-            
+
             background-color: transparent;
         }
 
@@ -46,17 +46,18 @@
         }
     }
 
-    @supports (transform: rotateY(-180deg)) {
+    @supports (-webkit-transform: rotateY(-180deg)) {
         .layout-history-beaches1 .flip-pictures:hover .pictures-beaches {
+            transform: rotateY(-180deg);
             -webkit-transform: rotateY(-180deg);
             -moz-transform: rotateY(-180deg);
             -ms-transform: rotateY(-180deg);
-            transform: rotateY(-180deg);
+
             
         }
     }
 
-    @supports (transform: rotateY(180deg)) {
+    @supports (-webkit-transform: rotateY(180deg)) {
         .layout-history-beaches2 .flip-pictures:hover .pictures-beaches {
             -webkit-transform: rotateY(180deg);
             -moz-transform: rotateY(180deg);
@@ -67,7 +68,7 @@
         }
     }
 
-    @supports (transition-duration: 2s) {
+    @supports (-webkit-transition-duration: 2s) {
         .flip-pictures:hover .pictures-beaches > .imagem-frente > img {
             -webkit-transition-duration: 2s;
             -moz-transition-duration: 2s;
@@ -85,14 +86,14 @@
         }
     }
 
-    @supports (backface-visibility: hidden) {
+    @supports (-webkit-backface-visibility: hidden) {
         .imagem-frente, .imagem-atras {
             position: absolute;
-       
+            backface-visibility: hidden;
             -webkit-backface-visibility: hidden;
             -moz-backface-visibility: hidden;
             -ms-backface-visibility: hidden;
-            backface-visibility: hidden;
+            
 
 
 
@@ -104,17 +105,18 @@
 
     @supports (transform: rotateY(180deg)) {
         .imagem-atras {
+            transform: rotateY(180deg);
             -webkit-transform: rotateY(180deg);
             -moz-transform: rotateY(180deg);
             -ms-transform: rotateY(180deg);
-            transform: rotateY(180deg);
+            
 
             
         }
     }
 }
 
-
+/*
 
 @media screen and (max-width: 1000px) {
     @supports (perspective: 1000px) {
@@ -196,7 +198,7 @@
 
     @supports (backface-visibility: hidden) {
         .imagem-frente, .imagem-atras {
-            display: inline-block;
+            
             position: absolute;
             width: 100%;
             height: 100%;        
@@ -324,3 +326,5 @@
         }
     }
 }
+
+*/

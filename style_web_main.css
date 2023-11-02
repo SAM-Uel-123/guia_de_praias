@@ -16,14 +16,19 @@
     --color-bg-layout: rgb(187, 187, 187);
 }
 
+html, head, header {
+    background-color: rgba(94, 197, 94, 0.707);
+    width: 100vw;
+}
 
-html, head, body, header {
+body {
     background-color: rgba(94, 197, 94, 0.707);
 
     min-width: 10vw;
     max-width: 100vw;
     width: 100vw;
 
+    min-height: 10vh;
     height: max-content;
 
     
@@ -797,11 +802,11 @@ footer {
         margin: 0px;
 
         max-width: 95vw;
-        width: 90vw;
+        width: 95vw;
 
-        min-height: 20vh;
+        min-height: 30vh;
         max-height: 90vh;
-        height: 90vh;
+        height: 65vh;
         
         
     }
@@ -827,7 +832,7 @@ footer {
         left: 50%;
     }
 
-    .miniaturas, .miniaturas2, .imagem-atras, .imagem-frente {
+    .miniaturas, .miniaturas2, .imagem-atras {
         display: inline-block;
         position: relative;
 
@@ -845,6 +850,8 @@ footer {
 
     }
 
+
+
     .flip-pictures {
         display: inline-block ;
         position: relative;
@@ -854,7 +861,7 @@ footer {
 
         min-height: 20vh;
         max-height: 90vh;
-        height: 82vh ;
+        height: 62vh ;
 
         top: 0px;
     }
@@ -884,10 +891,10 @@ footer {
         width: 45vw ;
 
         min-height: 20vh;
-        max-height: 90vh;
+        max-height: 70vh;
         height: 60vh ;
 
-        top: 0px;
+        top: 0%;
         left: 4%;
     }
 
@@ -939,7 +946,7 @@ footer {
         
         min-height: 45vh;
         max-height: 90vh;
-        height: 56vh;
+        height: 57vh;
 
         top: 0px;
         left: -43%;
@@ -949,7 +956,7 @@ footer {
     #descricao-praias02 > p {
         max-width: 60vw;
         width: 32vw;
-        left: -10px;
+        
     }
 
 
@@ -1020,11 +1027,22 @@ footer {
 
 
 @media screen and (max-width: 1000px) {
-
-    header {
-        display: inline-block;
+        
+    html, body {
+        overflow-x: hidden;
     }
 
+    .imagem {
+        display: block;
+        background-image: url('plano\ de\ fundo/bonete-20220628_122036.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 100vh;
+        padding: 0px;
+        margin: 0px;
+        box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.467);
+    }
     #icone-principal1 {
         display: inline-block;
         position: relative;
@@ -1045,7 +1063,7 @@ footer {
         position: relative;
 
         width: 30vw;
-        height: 30vh;
+        height: 18vh;
         text-decoration: none;
         padding: 10px;
         top: -7px;
@@ -1071,7 +1089,7 @@ footer {
         display: inline-block;
         position: relative;
 
-        width: 98vw;
+        width: 100vw;
 
         min-height: 180px;
         height: 12vh;
@@ -1090,19 +1108,21 @@ footer {
         position: relative;
         list-style: none;
         
-        width: 30vw;
-        height: 16vh;
+        width: 100px;
+        height: 50px;
         
         top: 0px;
-        left: 35%;
+        left: 45%;
     }
     
     .nav-list li{
         display: inline-block;
         position: relative;
-        width: 25vw;
+        width: 100px;
         
+        margin: auto;
         top: 0px;
+        left: 0px;
         letter-spacing: 1px;
 
         font-size: 3.5vw;
@@ -1118,6 +1138,8 @@ footer {
         text-decoration: none;
         
         top: 0px;
+        left: 0px;
+
         color: var(--color-font-navbar);
         text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.508);
     }
@@ -1339,11 +1361,11 @@ footer {
         background-color: black;
         color: white;
         margin: auto;
-        width: 96vw;
         min-width: 80px;
-        padding: 20px;
+        width: 95.8vw;
+        
+        
         text-align: center;
-        font-size: 2vw;
         top: auto;
     }
     

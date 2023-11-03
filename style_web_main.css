@@ -687,7 +687,7 @@ footer {
         display: inline-block;
         position: relative;
 
-        width: 98vw;
+        width: 93vw;
 
         min-height: 150px;
         height: 26vh;
@@ -1003,7 +1003,7 @@ footer {
         background-color: black;
         color: white;
         margin: auto;
-        width: 99vw;
+        width: 96vw;
         min-width: 80px;
         padding: 20px;
         text-align: center;
@@ -1171,7 +1171,9 @@ footer {
         max-height: max-content;
         height: max-content;
         margin: auto;
-        margin-bottom: 200px;
+
+        padding-bottom: 0px;
+        margin-bottom: 100px;
 
     }
 
@@ -1186,7 +1188,7 @@ footer {
         max-height: max-content;
         height: max-content;
 
-        padding: 30px 0px 30px 0px;
+        padding: 60px 0px 00px 0px;
         margin-bottom: 50px;
 
     }
@@ -1206,7 +1208,7 @@ footer {
 
         min-height: 10vh ;
         max-height: 80vh;
-        height: 35vh ;
+        height: 350px ;
 
         top: 0px;
     }
@@ -1221,6 +1223,7 @@ footer {
 
         min-height: 5vh ;
         max-height: 80vh ;
+        
     }
 
 
@@ -1260,6 +1263,8 @@ footer {
 
         max-width: 60vw;
         max-height: 60vh;
+        height: 500px;
+
 
         width: 30vw;
 
@@ -1270,7 +1275,7 @@ footer {
 
     #flip-pictures01 {
         width: 45vw;
-        height: 35vh;
+        height: 350px;
 
         top: 0px;
         left: 4% ;
@@ -1284,10 +1289,12 @@ footer {
         
 
         width: 30vw;
-        height: 32vh;
+
+        max-height: 80vh;
+        height: 305px;
 
         overflow-y: scroll;
-        top: 0px;
+        top: 40px;
         left: 5%;
         padding: 10px;
 
@@ -1296,13 +1303,13 @@ footer {
 
     #descricao-praias01 > p{
         max-width: 60vw;
-        width: 36vw;
+        
     }
 
 
     #flip-pictures02 {
         width: 45vw;
-        height: 35vh;
+        height: 400px;
 
         top: 0px;
         left: 50%;
@@ -1318,9 +1325,9 @@ footer {
         
         min-height: 10vh;
         max-height: 90vh;
-        height: 32vh;
+        height: 325px;
 
-        top: 0px;
+        top: -50px;
         left: -40%;
     }
 
@@ -1332,7 +1339,7 @@ footer {
 
     #flip-pictures03 {
         width: 45vw;
-        height: 35vh;
+        height: 400px;
 
         top: 0px;
         left: 4%;
@@ -1345,16 +1352,18 @@ footer {
 
         max-width: 50vw;
         width: 30vw;
-        height: 32vh;
 
-        top: 0px;
+        max-height: 70vh;
+        height: 325px;
+
+        top: -50px;
         left: 6%;
     }
 
 
     #descricao-praias03 > p {
-        max-width: 90vw;
-        width: 45vw;
+        max-width: 40vw;
+        width: 30vw;
     }
     footer {
         display: inline-block;
@@ -1886,13 +1895,13 @@ footer {
         
     }
     #mini-introducao {
-        font-size: 3vw;
+        font-size: 9vw;
     }
 
     .btn-about {
-        width: 20vw;
+        width: 40vw;
         height: 18vh;
-        font-size: 3vw;
+        font-size: 7vw;
     }
 
     section {
@@ -1917,7 +1926,7 @@ footer {
         max-height: 100vh;
         height: 100vh;
 
-        padding: 20px 0px 60px 0px;
+        padding: 20px 0px 60px 10px;
 
         margin: 20px 0px 20px 0px;
 

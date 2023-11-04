@@ -746,6 +746,8 @@ footer {
 
     .btn-about {
         width: 20vw;
+
+        min-height: 100px;
         height: 18vh;
         font-size: 3vw;
     }
@@ -1291,11 +1293,11 @@ footer {
         width: 30vw;
 
         max-height: 80vh;
-        height: 305px;
+        height: 325px;
 
         overflow-y: scroll;
-        top: 40px;
-        left: 5%;
+        top: 0px;
+        left: 10%;
         padding: 10px;
 
     }
@@ -1328,7 +1330,7 @@ footer {
         height: 325px;
 
         top: -50px;
-        left: -40%;
+        left: -45%;
     }
 
     #descricao-praias02 > p {
@@ -1357,7 +1359,7 @@ footer {
         height: 325px;
 
         top: -50px;
-        left: 6%;
+        left: 10%;
     }
 
 
@@ -1393,6 +1395,20 @@ footer {
 
 @media screen and (max-width: 600px){
 
+    .imagem {
+        display: block;
+        background-image: url('plano\ de\ fundo/bonete-20220628_122036.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100vw;
+
+        min-height: 500px;
+        height: 100vh;
+        margin: 0px;
+        box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.467);
+    }
+    
+    
     #icone-principal1 {
         display: inline-block;
         position: relative;

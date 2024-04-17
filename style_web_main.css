@@ -3,2538 +3,332 @@
     margin: 0px;
     outline: 0px;
     border: 0px;
-
-
-
 }
-
-
-
 
 :root {
     --color-font-navbar: yellow;
-    --color-bg-layout: rgb(187, 187, 187);
+    --color-bg-layout: rgb(231, 231, 231);
+    --bgPadrao: rgba(94, 197, 94, 0.707);
+    --bgLayoutHistoryOdd: rgb(228, 228, 228);
+    --bgLayoutHistoryEven: rgb(231, 255, 220);
+    --bgSection: rgba(93, 207, 93, 0.707);;
+    --bgBotao: green;
 }
 
 html, head, header {
-    background-color: rgba(94, 197, 94, 0.707);
+    background-color: var(--bgPadrao);
     width: 100vw;
 }
 
 body {
+    display: grid;
     background-color: rgba(94, 197, 94, 0.707);
-
-    min-width: 10vw;
-    max-width: 100vw;
-    width: 100vw;
-
-    min-height: 10vh;
-    height: max-content;
-
-    
-}
-
-
-nav {
-    display: inline-block;
-
-    width: 97vw;
-    height: 97vh;
-
-    padding: 5px;
-    background-color: rgb(84, 211, 84);
-    padding-right: 50px;
-
+    min-height: 100vh;
+    grid-template-columns: repeat(1, 1fr);
+    grid-auto-rows: minmax(1%, auto);
+    font-family: 'Courier New', Courier, monospace;
 
 }
 
+@media screen and ((min-width: 701px) or (max-width: 2000px)) {
 
-
-.nav-list {
-    list-style: none;
-    display: flex;    
-    margin-left: auto;
-}
-
-.nav-list li{
-    letter-spacing: 1px;
-    margin: auto;
-    
-}
-
-.nav-list li a {
-    text-decoration: none;
-    margin-left: 10px;
-    color: var(--color-font-navbar);
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.508);
-}
-
-
-.nav-list > li a:hover {
-    text-decoration: underline;
-    color: rgb(189, 189, 189);
-    margin-left: 10px;
-}
-
-
-
-.link-about {
-    text-decoration: none;
-    background-color: green;
-    color: white;
-    border-radius: 30px;
-    border-color: transparent;
-    font-size: 2vw;
-    
-    padding: 15px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.495);
-}
-
-.link-about:hover {
-    background-color: rgb(0, 60, 0);
-    color: rgb(199, 199, 199);
-    transition: 0.3s;
-}
-
-
-#icone-principal1 {
-    display: block;
-    margin-left: 1vw;
-    margin-right: 1vw;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    
-}
-
-#icone-principal{
-    display: flex;
-    text-decoration: none;
-    padding: 10px;
-}
-
-#icone-principal > p {
-    font-size: 2rem;
-    margin: auto;
-    color: var(--color-font-navbar);
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.227);
-}
-
-#icone-principal > p:hover {
-    color: rgb(189, 189, 189)
-}
-
-
-#mini-introducao {
-    display: block;
-    position: relative;
-    max-width: 60vw;
-    color: white;
-    margin: 0px;
-    padding: 0px;
-    font-size: 2rem;
-    text-align: center;
-    margin: auto;
-    top: 100px;
-}
-
-
-.descricao-praias, .descricao-praias2 {
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-
-
-.btn-about {
-    display: block;
-    background-color: green;
-    color: white;
-    border-radius: 30px;
-    border-color: transparent;
-    font-size: 1.2rem;
-    padding: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.495);
-}
-
-.btn-about:hover {
-    background-color: rgb(0, 60, 0);
-    color: rgb(199, 199, 199);
-    transition: 0.3s;
-}
-
-.btn-about#conhecer {
-    margin: auto;
-    position: relative;
-    top: 200px;
-}
-
-
-.imagem {
-    display: block;
-    background-image: url('plano\ de\ fundo/bonete-20220628_122036.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100vw;
-    height: 100vh;
-    margin: 0px;
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.467);
-}
-
-
-
-.imagem-atras {
-    max-width: 400px;
-}
-
-footer {
-    display: inline-block;
-    background-color: black;
-    color: white;
-    margin: auto;
-    width: 99vw;
-    min-width: 80px;
-    padding: 20px;
-    text-align: center;
-    font-size: 2vw;
-    top: auto;
-}
-
-
-/*
-    Monitor de computador comum
-*/
-
-
-@media screen and (min-width: 1301px) {
-
-
-    .link-about {
-        display: block;
-        position: relative;
-        text-decoration: none;
-        background-color: green;
-        color: white;
-        border-radius: 30px;
-        border-color: transparent;
-        font-size: 2vw;
-        
-        padding: 15px;
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.495);
-    
-        
-
+    header {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(1%, auto);
+        margin-bottom: 5%;
+        box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.438);
     }
 
-
-    
-    .link-about:hover {
-        background-color: rgb(0, 60, 0);
-        color: rgb(199, 199, 199);
-        transition: 0.3s;
-    }
-    
-    
-    #icone-principal1 {
-        display: inline-block;
-        position: relative;
-        margin-left: 1vw;
-        margin-right: 1vw;
-
-
-        width: 250px;
-        height: 250px;
-
-        border-radius: 50%;
-        top: -1px;
-        
-    }
-    
-    #icone-principal{
-        display: inline-block;
-        position: relative;
-
-        width: 45vw;
-        height: 30vh;
-        text-decoration: none;
-        padding: 10px;
-        top: -7px;
-    }
-    
-    #icone-principal > p {
-        display: inline-block;
-        position: relative;
-        font-size: 3.5vw;
-        
-        color: var(--color-font-navbar);
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.227);
-
-        
-
-        top: -100px;
-        left: 2%;
-        
-    }
-    
-    #icone-principal > p:hover {
-        color: rgb(189, 189, 189)
-    }
-
-    nav {
-        display: inline-block;
-        position: relative;
-
-        width: 98vw;
-
-        min-height: 90px;
-        max-height: 100vh;
-        height: 300px;
-        
-        padding: 20px 0px 20px 20px;
-        background-color: rgb(84, 211, 84);
-        
-        
-
-    }
-    
-    
-    
-    .nav-list {
-        display: inline-block;
-        position: relative;
-        list-style: none;
-        display: inline-block;    
-        top: -50px;
-        
-    }
-    
-    .nav-list li{
-        display: inline-block;
-        position: relative;
-        width: 200px;
-        
-        letter-spacing: 1px;
-
-        font-size: 3.5vw;
-
-        left: -10%;
-        
-    }
-    
-    .nav-list li a {
-        display: inline-block;
-        position: relative;
-        width: 100px;
-        text-decoration: none;
-        
-        top: -40px;
-        left: 39vw;
-        color: var(--color-font-navbar);
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.508);
-    }
-    
-    
-    .nav-list > li a:hover {
-        text-decoration: underline;
-        color: rgb(189, 189, 189);
-        
-    }
-    #mini-introducao {
-        font-size: 3vw;
-    }
-
-    .btn-about {
-        width: 20vw;
-        height: 18vh;
-        font-size: 3vw;
-    }
-
-    section {
-        display: block;
-        position: relative;
-        background-color: white;
-        margin: auto;
-        border-radius: 0px 0px 50px 50px;
-
-        min-width: 50vw;
-        max-width: 95vw;
-        width: 95vw;
-
-        min-height: 60vh;
-        max-height: max-content;
-        height: max-content;
-
-        padding-bottom: 100px;
-        margin-bottom: 200px;
-    }
-
-    .layout-history-beaches1, .layout-history-beaches2 {
-        display: inline-block;
-        position: relative;
-
-        max-width: 95vw;
-        width: 95vw;
-
-        min-height: 40vh;
-        max-height: 90vh;
-        height: 65vh;
-
-
-        padding: 20px 0px 10px 0px;
-        margin: 50px 0px 50px 0px;
-
-    }
-
-
-    .layout-history-beaches2 {
-        background-color: var(--color-bg-layout);
-        
-        
-        
-    }
-
-    .history-border {
-        display: inline-block;
-        position: relative;
-
-        padding: 0px;
-        margin: 0px;
-
-        max-width: 95vw;
-        width: 90vw;
-
-        min-height: 20vh;
-        max-height: 90vh;
-        height: 90vh;
-        
-        
-    }
-
-
-
-    .link-about {
-        transform: translate(-50%, -50%);
-        display: inline-block;
-        position: relative;
-
-        width: max-content;
-        top: 50%;
-        left: 50%;
-    }   
-    
-    .link-about2 {
-        transform: translate(-50%, -50%);
-        display: inline-block;
-        position: absolute;
-
-        top: 50%;
-        left: 50%;
-    }
-
-    .miniaturas, .miniaturas2, .imagem-atras, .imagem-frente {
-        display: inline-block;
-        position: relative;
-
-
-        min-width: 40vw;
-        max-width: 90vw ;
-        width: 45vw;
-        
-        min-height: 20vh;
-        max-height: 90vh;
-        height: 60vh;
-
-        top: 0px;
-        left: 0px;
-
-    }
-
-    .flip-pictures {
-        display: inline-block ;
-        position: relative;
-        min-width: 40vw;
-        max-width: 90vw ;
-        width: 45vw ;
-
-        min-height: 20vh;
-        max-height: 90vh;
-        height: 82vh ;
-
-        top: 0px;
-    }
-
-
-        
-    .descricao-praias, .descricao-praias2 {
-        display: inline-block;
-        position: absolute;
-        border: 4px dashed black;
-        
-        overflow-y: scroll;
-        font-size: 2.5vw;
-        max-width: 80vw;
-        width: 30vw;
-
-        height: 60vh;
-        padding: 10px;
-
-    }
-        
-    #flip-pictures01 {
-        display: inline-block;
-        position: relative;
-        min-width: 40vw;
-        max-width: 90vw ;
-        width: 45vw ;
-
-        min-height: 20vh;
-        max-height: 90vh;
-        height: 60vh ;
-
-
-
-        top: 0px;
-        left: 4%;
-    }
-
-    #descricao-praias01 {
-        display: inline-block;
-        position: relative;
-        width: 35vw;
-        height: 56vh;
-
-        top: 0px;
-        left: 10%;
-        padding: 10px;
-        
-
-    }
-
-    
-    #descricao-praias01 > p {
-        max-width: max-content;
-        width: 32vw;
-
-    }
-
-
-    #flip-pictures02 {
-        display: inline-block;
-        position: relative;
-        min-width: 40vw;
-        max-width: 90vw ;
-        width: 45vw ;
-
-        min-height: 20vh;
-        max-height: 90vh;
-        height: 60vh ;
-
-        
-
-        top: 0px;
-        left: 50%;
-    }
-
-
-    #descricao-praias02 {
-        display: inline-block;
-        position: relative;
-        overflow-y: scroll;
-
-        min-width: 30vw;
-        max-width: 60vw;
-        width: 32vw;
-        
-        min-height: 45vh;
-        max-height: 90vh;
-        height: 56vh;
-
-        top: 0px;
-        left: -43%;
-    }
-
-
-    #descricao-praias02 > p {
-        max-width: 60vw;
-        width: 32vw;
-        left: -10px;
-    }
-
-
-    #flip-pictures03 {
-        display: inline-block;
-        position: relative;
-        min-width: 40vw;
-        max-width: 90vw ;
-        width: 45vw ;
-
-        min-height: 20vh;
-        max-height: 90vh;
-        height: 60vh;
-
-        top: 0px;
-        left: 4%;
-    }
-
-    #descricao-praias03 {
-        display: inline-block;
-        position: relative;
-
-        overflow-y: scroll;
-
-        max-width: 70vw;
-        width: 35vw;
-        height: 56vh;
-
-        top: 0px;
-        left: 10%;
-        
-    }
-
-
-    #descricao-praias03 > p {
-        max-width: 70vw;
-        
-        max-height: max-content;
-        
-    }
-
-    footer {
-        display: inline-block;
-        position: relative;
-        width: 97vw;
-
-    }
-    footer > p {
-        width: max-content;
-        margin: auto;
-    }
-}
-
-
-@media screen and (max-width: 1300px) {
-    .link-about {
-        display: block;
-        position: relative;
-        text-decoration: none;
-        background-color: green;
-        color: white;
-        border-radius: 30px;
-        border-color: transparent;
-        font-size: 2vw;
-        
-        padding: 15px;
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.495);
-    
-        
-
-    }
-
-
-    
-    .link-about:hover {
-        background-color: rgb(0, 60, 0);
-        color: rgb(199, 199, 199);
-        transition: 0.3s;
-    }
-    
-    
-    #icone-principal1 {
-        display: inline-block;
-        position: relative;
-        margin-left: 1vw;
-        margin-right: 1vw;
-
-
-        width: 150px;
-        height: 150px;
-
-        border-radius: 50%;
-        top: -1px;
-        
-    }
-    
-    #icone-principal{
-        display: inline-block;
-        position: relative;
-
-        width: 60vw;
-        height: 30vh;
-        text-decoration: none;
-        padding: 10px;
-        top: -7px;
-    }
-    
-    #icone-principal > p {
-        display: inline-block;
-        position: relative;
-        font-size: 3.5vw;
-        width: 10vw;
+    #divIcone-principal {
+        width: 50%;
         height: 10vh;
-
-
-        color: var(--color-font-navbar);
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.227);
-        top: -60px;
-        
+        margin: auto;
         
     }
-    
-    #icone-principal > p:hover {
-        color: rgb(189, 189, 189)
-    }
 
-    nav {
-        display: inline-block;
-        position: relative;
-
-        width: 93vw;
-
-        min-height: 150px;
-        height: 26vh;
-
-        padding: 20px;
-        background-color: rgb(84, 211, 84);
-        padding-right: 50px;
-        
-
-    }
-    
-    
-    
-    .nav-list {
-        display: inline-block;
-        position: relative;
-        list-style: none;
-        display: inline-block;    
-        top: -50px;
-        
-    }
-    
-    .nav-list li{
-        display: inline-block;
-        position: relative;
-        width: 200px;
-        
-        letter-spacing: 1px;
-
-        font-size: 3.5vw;
-
-        left: -20%;
-        
-    }
-    
-    .nav-list li a {
-        display: inline-block;
-        position: relative;
-        width: 100px;
-        text-decoration: none;
-        top: -20px;
-        left: 25vw;
-        color: var(--color-font-navbar);
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.508);
-    }
-    
-    
-    .nav-list > li a:hover {
-        text-decoration: underline;
-        color: rgb(189, 189, 189);
-        
-    }
-    #mini-introducao {
-        font-size: 3vw;
-    }
-
-    .btn-about {
-        width: 20vw;
-
-        min-height: 100px;
-        height: 18vh;
-        font-size: 3vw;
-    }
-
-    section {
+    #icone-principal1 {
         display: block;
-        position: relative;
-        background-color: white;
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
         margin: auto;
-        border-radius: 0px 0px 50px 50px;
-
-        min-width: 50vw;
-        max-width: 95vw;
-        width: 95vw;
-
-        min-height: 60vh;
-        max-height: max-content;
-        height: max-content;
-
-        padding-bottom: 100px;
-        margin-bottom: 200px;
+        
     }
 
-    .layout-history-beaches1, .layout-history-beaches2 {
-        display: inline-block;
+    
+    header > nav {
+        display: grid;
+        grid-template-columns: 1fr 8fr;
+        grid-auto-rows: minmax(1%, auto);
+        background-color: green;
+        height: 10vh;
+        padding: 10px;
+        
+    }
+
+    header > nav > ul{
+
+        display: grid;
         position: relative;
-
-        max-width: 95vw;
-        width: 95vw;
-
-        min-height: 40vh;
-        max-height: 90vh;
-        height: 65vh;
-
-
-        padding: 20px 0px 10px 0px;
-        margin: 50px 0px 50px 0px;
-
-    }
-
-
-    .layout-history-beaches2 {
-        background-color: var(--color-bg-layout);
         
-        
-        
-    }
-
-    .history-border {
-        display: inline-block;
-        position: relative;
-
-        padding: 0px;
-        margin: 0px;
-
-        max-width: 95vw;
-        width: 95vw;
-
-        min-height: 30vh;
-        max-height: 90vh;
-        height: 65vh;
-        
-        
-    }
-
-
-
-    .link-about {
-        transform: translate(-50%, -50%);
-        display: inline-block;
-        position: relative;
-
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(1%, auto);
         width: max-content;
+        height: max-content;
+        border-radius: 20px;
+        padding: 0px 10px 0px 10px;
         top: 50%;
-        left: 50%;
-    }   
-    
-    .link-about2 {
+        left: 90%;
+        gap: 10px;
         transform: translate(-50%, -50%);
-        display: inline-block;
-        position: absolute;
-
-        top: 50%;
-        left: 50%;
+        
+        
+        
     }
 
-    .miniaturas, .miniaturas2, .imagem-atras {
-        display: inline-block;
-        position: relative;
-
-
-        min-width: 40vw;
-        max-width: 90vw ;
-        width: 45vw;
-        
-        min-height: 20vh;
-        max-height: 90vh;
-        height: 60vh ;
-
-        top: 0px;
-        left: 0px;
-
-    }
-
-
-
-    .flip-pictures {
-        display: inline-block ;
-        position: relative;
-        min-width: 40vw;
-        max-width: 90vw ;
-        width: 45vw ;
-
-        min-height: 20vh;
-        max-height: 90vh;
-        height: 62vh ;
-
-        top: 0px;
-    }
-
-
-        
-    .descricao-praias, .descricao-praias2 {
-        display: inline-block;
-        position: absolute;
-        border: 4px dashed black;
-        
-        overflow-y: scroll;
-        font-size: 2.5vw;
-        max-width: 80vw;
-        width: 30vw;
-
-        height: 60vh;
+    header > nav > ul > li {
+        background-color: rgb(0, 104, 0);
+        color: yellow;
+        border-radius: 10px;
+        text-align: center;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.425);
+        box-shadow: 2px 3px 4px rgba(0, 0, 0, 0.418);
         padding: 10px;
-
-    }
-        
-    #flip-pictures01 {
-        display: inline-block;
-        position: relative;
-        min-width: 40vw;
-        max-width: 90vw ;
-        width: 45vw ;
-
-        min-height: 20vh;
-        max-height: 70vh;
-        height: 60vh ;
-
-        top: 0%;
-        left: 4%;
     }
 
-    #descricao-praias01 {
-        display: inline-block;
-        position: relative;
-        width: 35vw;
-        height: 56vh;
-
-        top: 0px;
-        left: 10%;
-        padding: 10px;
-        
-
-    }
-
-    
-    #descricao-praias01 > p {
-        max-width: max-content;
-        width: 32vw;
-
-    }
-
-
-    #flip-pictures02 {
-        display: inline-block;
-        position: relative;
-        min-width: 40vw;
-        max-width: 90vw ;
-        width: 45vw ;
-
-        min-height: 20vh;
-        max-height: 90vh;
-        height: 60vh ;
-
-        top: 0px;
-        left: 50%;
-    }
-
-
-    #descricao-praias02 {
-        display: inline-block;
-        position: relative;
-        overflow-y: scroll;
-
-        min-width: 30vw;
-        max-width: 60vw;
-        width: 32vw;
-        
-        min-height: 45vh;
-        max-height: 90vh;
-        height: 57vh;
-
-        top: 0px;
-        left: -43%;
-    }
-
-
-    #descricao-praias02 > p {
-        max-width: 60vw;
-        width: 32vw;
-        
-    }
-
-
-    #flip-pictures03 {
-        display: inline-block;
-        position: relative;
-        min-width: 40vw;
-        max-width: 90vw ;
-        width: 45vw ;
-
-        min-height: 20vh;
-        max-height: 90vh;
-        height: 60vh;
-
-        top: 0px;
-        left: 4%;
-    }
-
-    #descricao-praias03 {
-        display: inline-block;
-        position: relative;
-
-        overflow-y: scroll;
-
-        max-width: 70vw;
-        width: 35vw;
-        height: 56vh;
-
-        top: 0px;
-        left: 10%;
-        
-    }
-
-
-    #descricao-praias03 > p {
-        max-width: 70vw;
-        
-        max-height: max-content;
-        
-    }
-
-    footer {
-        display: inline-block;
-        background-color: black;
+    header > nav > ul > li > a {
+        display: block;
+        text-decoration: none;
         color: white;
-        margin: auto;
-        width: 96vw;
-        min-width: 80px;
-        padding: 20px;
-        text-align: center;
-        font-size: 2vw;
-        top: auto;
-    }
-    
-    footer > p {
-        text-align: center;
-        font-size: 3vw;
-        margin: auto;
-
     }
 
-}
-
-
-/*
-    Celulares e Tablets
-*/
-
-
-@media screen and (max-width: 1000px) {
-        
-    html, body {
-        overflow-x: hidden;
+    header > nav > ul > li > a:hover {
+        text-decoration: underline;
     }
 
     .imagem {
-        display: block;
-        background-image: url('plano\ de\ fundo/bonete-20220628_122036.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
         width: 100vw;
         height: 100vh;
-        padding: 0px;
-        margin: 0px;
-        box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.467);
+        text-align: center;
+        background-image: url("plano\ de\ fundo/bonete-20220628_122036.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+
     }
-    #icone-principal1 {
-        display: inline-block;
+
+    .imagem > p, .imagem > button{
         position: relative;
-        margin-left: 1vw;
-        margin-right: 1vw;
-
-
-        width: 100px;
-        height: 100px;
-
-        border-radius: 50%;
-        top: -1px;
-        
-    }
-    
-    #icone-principal{
-        display: inline-block;
-        position: relative;
-
-        width: 30vw;
-        height: 18vh;
-        text-decoration: none;
-        padding: 10px;
-        top: -7px;
-    }
-    
-    #icone-principal > p {
-        display: inline-block;
-        position: relative;
-        font-size: 3.5vw;
-        
-        color: var(--color-font-navbar);
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.227);
-        top: -20%;
-        left: 2%;
-        
-    }
-    
-    #icone-principal > p:hover {
-        color: rgb(189, 189, 189)
-    }
-
-    nav {
-        display: inline-block;
-        position: relative;
-
-        width: 100vw;
-
-        min-height: 180px;
-        height: 12vh;
-
-        padding: 20px 0px 20px 20px;
-        background-color: rgb(84, 211, 84);
-        
-        
-
-    }
-    
-    
-    
-    .nav-list {
-        display: inline-block;
-        position: relative;
-        list-style: none;
-        
-        width: 100px;
-        height: 50px;
-        
-        top: 0px;
-        left: 45%;
-    }
-    
-    .nav-list li{
-        display: inline-block;
-        position: relative;
-        width: 100px;
-        
-        margin: auto;
-        top: 0px;
-        left: 0px;
-        letter-spacing: 1px;
-
-        font-size: 3.5vw;
-
-        
-        
-    }
-    
-    .nav-list li a {
-        display: inline-block;
-        position: relative;
-        width: 100px;
-        text-decoration: none;
-        
-        top: 0px;
-        left: 0px;
-
-        color: var(--color-font-navbar);
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.508);
-    }
-    
-    
-    .nav-list > li a:hover {
-        text-decoration: underline;
-        color: rgb(189, 189, 189);
-        
-    }
-    #mini-introducao {
-        font-size: 3vw;
-    }
-
-    .btn-about {
-        width: 20vw;
-        height: 18vh;
-        font-size: 3vw;
-    }
-
-    section {
-        
-        display: block;
-        position: relative;
-        background-color: white;
-
-        max-width: 95vw;
-        width: 95vw;
-        max-height: max-content;
-        height: max-content;
-        margin: auto;
-
-        padding-bottom: 0px;
-        margin-bottom: 100px;
-
-    }
-
-    .layout-history-beaches1 , .layout-history-beaches2{
-        display: inline-block;
-        position: relative;
-        margin: 100px 30px 50px 0px;
-        
-        max-width: 95vw;
-        width: 95vw;
-
-        max-height: max-content;
-        height: max-content;
-
-        padding: 60px 0px 00px 0px;
-        margin-bottom: 50px;
-
-    }
-
-    .layout-history-beaches2 {
-        background-color: var(--color-bg-layout);
-        
-    }
-
-    .miniaturas, .miniaturas2, .imagem-atras, .imagem-frente {
-        display: inline-block ;
-        position: relative ;
-        
-        min-width: 30vw ;
-        max-width: 70vw ;
-        width: 45vw ;
-
-        min-height: 10vh ;
-        max-height: 80vh;
-        height: 350px ;
-
-        top: 0px;
-    }
-
-    .flip-pictures {
-        display: inline-block ;
-        position: relative  ;
-
-        min-width: 40vw ;
-        max-width: 70vw ;
-        width: 45vw  ;
-
-        min-height: 5vh ;
-        max-height: 80vh ;
-        
-    }
-
-
-    .history-border {
-        display: inline-block;
-        position: relative;
-        margin: 0px;
-
-        min-width: 60vw;
-        max-width: 95vw;
-        width: 90vw;
-
-        min-height: 20vh;
-        max-height: 95vh;
-        height: max-content;
-    }
-
-    .link-about {
-        transform: translate(-50%, -50%);
         top: 50%;
-        left: 50%;
-    }   
-    
-    .link-about2 {
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: 50%;
     }
 
-
-    .descricao-praias, .descricao-praias2 {
-        display: inline-block;
-        position: relative;
-        border: 3px dashed black;
-        padding: 10px;
-
-
-        max-width: 60vw;
-        max-height: 60vh;
-        height: 500px;
-
-
-        width: 30vw;
-
-        left: 5%;
-        margin: 0px;
-        
-    }
-
-    #flip-pictures01 {
-        width: 45vw;
-        height: 350px;
-
-        top: 0px;
-        left: 4% ;
-    }
-
-    #descricao-praias01 {
-        display: inline-block;
-        position: relative;
-
-        max-width: 45vw;
-        
-
-        width: 30vw;
-
-        max-height: 80vh;
-        height: 325px;
-
-        overflow-y: scroll;
-        top: 0px;
-        left: 10%;
-        padding: 10px;
-
-    }
-
-
-    #descricao-praias01 > p{
-        max-width: 60vw;
-        
-    }
-
-
-    #flip-pictures02 {
-        width: 45vw;
-        height: 400px;
-
-        top: 0px;
-        left: 50%;
-    }
-
-
-    #descricao-praias02 {
-
-        overflow-y: scroll;
-
-        max-width: 90vw;
-        width: 30vw;
-        
-        min-height: 10vh;
-        max-height: 90vh;
-        height: 325px;
-
-        top: -50px;
-        left: -45%;
-    }
-
-    #descricao-praias02 > p {
-        max-width: 40vw;
-        width: 36vw;
-
-    }
-
-    #flip-pictures03 {
-        width: 45vw;
-        height: 400px;
-
-        top: 0px;
-        left: 4%;
-    }
-
-
-    #descricao-praias03 {
-
-        overflow-y: scroll;
-
-        max-width: 50vw;
-        width: 30vw;
-
-        max-height: 70vh;
-        height: 325px;
-
-        top: -50px;
-        left: 10%;
-    }
-
-
-    #descricao-praias03 > p {
-        max-width: 40vw;
-        width: 30vw;
-    }
-    footer {
-        display: inline-block;
-        background-color: black;
+    .imagem > p {
         color: white;
-        margin: auto;
-        min-width: 80px;
-        width: 95.8vw;
-        
-        
-        text-align: center;
-        top: auto;
-    }
-    
-    footer > p {
-        text-align: center;
-        font-size: 3vw;
-        margin: auto;
-
-    }
-
-}
-
-/*
-    Celulares
-*/
-
-@media screen and (max-width: 600px){
-
-    .imagem {
-        display: block;
-        background-image: url('plano\ de\ fundo/bonete-20220628_122036.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 100vw;
-
-        min-height: 500px;
-        height: 100vh;
-        margin: 0px;
-        box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.467);
-    }
-    
-    
-    #icone-principal1 {
-        display: inline-block;
-        position: relative;
-        margin-left: 1vw;
-        margin-right: 1vw;
-
-
-        width: 120px;
-        height: 120px;
-
-        border-radius: 50%;
-        top: -1px;
-        
-    }
-    
-    #icone-principal{
-        display: inline-block;
-        position: relative;
-
-        width: 45vw;
-        height: 30vh;
-        text-decoration: none;
+        background-color: rgba(0, 128, 0, 0.377);
         padding: 10px;
-        top: -7px;
-    }
-    
-    #icone-principal > p {
-        display: inline-block;
-        position: relative;
-        font-size: 3.5vw;
-        
-        color: var(--color-font-navbar);
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.227);
-
-        
-
-        top: -30%;
-        left: 2%;
-        
-    }
-    
-    #icone-principal > p:hover {
-        color: rgb(189, 189, 189)
-    }
-
-    nav {
-        display: inline-block;
-        position: relative;
-
-        width: 95vw;
-
-        min-height: 120px;
-        height: 20vh;
-        
-        padding: 20px;
-        background-color: rgb(84, 211, 84);
-        padding-right: 0px;
-        
-
-    }
-    
-    
-    
-    .nav-list {
-        display: inline-block;
-        position: relative;
-        list-style: none;
-        display: inline-block;    
-
-        width: 10vw;
-        height: 10vh;
-
-        top: -30px;
-        left: -100px;
-        
-    }
-    
-    .nav-list li{
-        display: inline-block;
-        position: relative;
-        width: 50px;
-        
-        letter-spacing: 1px;
-
-        font-size: 3.5vw;
-
-        left: -50%;
-        
-    }
-    
-    .nav-list li a {
-        display: inline-block;
-        position: relative;
-        width: 100px;
-        text-decoration: none;
-        
-        top: -30px;
-        left: 40vw;
-        color: var(--color-font-navbar);
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.508);
-    }
-    
-    
-    .nav-list > li a:hover {
-        text-decoration: underline;
-        color: rgb(189, 189, 189);
-        
-    }
-    #mini-introducao {
-        font-size: 3vw;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.404);
     }
 
     .btn-about {
-        width: 20vw;
-        height: 18vh;
-        font-size: 3vw;
+        color: white;
+        background-color: var(--bgBotao);
+        border-radius: 20px;
+        margin-top: 10px;
+        padding: 10px;
+        box-shadow: 2px 2px 2px rgba(0, 107, 0, 0.493);
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.404);
     }
+
+
     section {
-        display: block;
         position: relative;
-        background-color: white;
-
-        max-width: 100vw;
-        width: 100vw;
-        max-height: max-content;
-        height: max-content;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(1%, auto);
+        min-height: 100vh;
+        padding: 2%;
+        max-width: 80vw;
         margin: auto;
-        margin-bottom: 100px;
+        margin-bottom: 10vh;
+    }
+
+    .layout-history-beaches {
+        position: relative;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(1%, auto);
+        background-color: var(--bgLayoutHistoryEven);
+        border-radius: 20px;
+        box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.438);
+        width: 95%;
+        height: 50vh;
+        margin: auto;
+        padding: 2% 1% 2% 1%;
+        gap: 2%;
+        margin-bottom: 5%;
+    }
+
+    .layout-history-beaches:nth-child(odd) {
+        background-color: var(--bgLayoutHistoryOdd);
+    }
+
+    .layout-history-beaches:nth-child(odd) > .flip-pictures {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        width: 100%;
+        height: 100%;
+        box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.356);
+    }
+
+    .layout-history-beaches:nth-child(even) > .flip-pictures {
         
+        grid-column-start: 2;
+        grid-column-end: 2;
+        width: 100%;
+        height: 100%;
+        box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.356);
+    }
 
+    .layout-history-beaches:nth-child(odd) > .descricao-praias {
+        grid-column-start: 2;
+        grid-column-end: 2;
     }
 
 
-    .layout-history-beaches1 , .layout-history-beaches2{
-        display: inline-block;
-        position: relative;
-        margin: 50px 0px 25px 0px;
-        
-        min-width: 50vw;
-        max-width: 95vw;
-        width: 95vw;
-
-        min-height: 40vh;
-        max-height: 200vh;
-        height: max-content;
-        padding: 50px 0px 50px 30px;
-        margin-bottom: 100px;
-
+    .layout-history-beaches:nth-child(even) > .descricao-praias {
+        grid-column-start: 1;
+        grid-column-end: 1;
+        grid-row-start: 1;
+        grid-row-end: 1;
     }
-
-    .layout-history-beaches2 {
-
-        position: relative;
-        background-color: var(--color-bg-layout);
-        margin: 0px;
-        padding-left: 30px;
-        
-        
-    }
-
-    .miniaturas, .miniaturas2, .imagem-atras{
-        display:  block;
-        position: relative;
-
-        min-width: 30vw;
-        max-width: 95vw ;
-        width: 90vw ;
-
-
-        min-height: 18vh;
-        max-height: 90vh;
-        height: 90vh ;
-
-    }
-
-    .history-border {
-        display: inline-block;
-        position: relative;
-        margin: 0px;
-
-        min-width: 45vw;
-        max-width: 90vw;
-        width: 90vw;
-
-        min-height: 20vh;
-        max-height: 90vh;
-        height: 28vh;
-    }
-
-    .link-about {
-        display: inline-block;
-        position: relative;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: 50%;
-    }   
-    
-    .link-about2 {
-        display: inline-block;
-        position: relative;
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: 50%;
-    }
-
 
     .descricao-praias {
-        display: inline-block;
-        position: relative;
-        border: 3px dashed black;
         padding: 10px;
-
-        top: 0px;
-        left: 0px;
-        margin: 0px;
-        
-    }
-
-    .descricao-praias02 > p {
-        font-size: 0.4;
-        max-width: 50vw;
-        width: 10vw;
-    }
-
-
-    .descricao-praias2 {
-        display: b;
-        position: relative;
         overflow-y: scroll;
-
-        border: 3px dashed black;
-        padding: 10px;
-    }       
-
-
-    #flip-pictures01 {
-        display: in;
-        position: relative;
-
-        min-width: 30vw;
-        max-width: 90vw;
-        width: 90vw;
-
-        min-height: 10vh;
-        max-height: 90vh;
-        height: 90vh;
-
-        top: 0px;
-        left: 0px;
-    }
-
-    #descricao-praias01 {
-        display: block;
-        position: relative;
-
-        min-width: 20vw;
-        max-width: 90vw;
-        
-        width: 84vw;
-
-
-        max-height: 90vh;
-        height: 50vh;
-
-        overflow-y: scroll;
-
-        top: 10px;
-        left: 5px;
-        padding: 10px;
+        border: 3px solid black;
+        border-style: dashed;
 
     }
 
-
-    #descricao-praias01 > p{
-        display: block;
-        position: relative;
-        max-width: 84vw;
-        width: max-content;
-        height: 60vh;
-
-    }
-
-
-    #flip-pictures02 {
-        display: block;
-        position: relative;
-        min-width: 30vw;
-        max-width: 90vw;
-        width: 90vw;
-
-        min-height: 20vh;
-        max-height: 90vh;
-        height: 90vh;
-
-        top: 0%;
-        left: 0%;
-    }
-
-
-    #descricao-praias02 {
-        display: block;
-        position: relative;
-        
-
-        min-height: 20vh;
-        max-height: 90vh;
-        width: 84vw;
-
-        min-height: 20vh;
-        max-height: 90vh;
-        height: 50vh;
-
-        top: 20px;
-        left: 0%;
-    }
-
-    #descricao-praias02 > p {
-        display: inline-block;
-        position: relative;
-        max-width: 90vw;
-        width: 84vw;
-
-    }
-
-    #flip-pictures03 {
-        display: block;
-        position: relative;
-
-        min-width: 50vw;
-        max-width: 90vw;
-        width: 90vw;
-
-        min-height: 20vh;
-        max-height: 90vh;
-        height: 90vh;
-
-        top: 0px;
-        left: 0px;
-    }
-
-
-    #descricao-praias03 {
-        display: block;
-        position: relative;
-        
-        overflow-y: scroll;
-
-        max-width: 90vw;
-        width: 84vw;
-        height: 50vh;
-
-
-        top: 20px;
-        left: 0%;
-    }
-
-
-    #descricao-praias03 > p {
-        position: relative;
-        overflow-y: scroll;
-        max-width: 90vw;
-        width: 84vw;
-    }
-    footer {
-        display: inline-block;
-        background-color: black;
-        color: white;
-        margin: auto;
-        width: 92vw;
-        min-width: 80px;
-        padding: 20px;
-        text-align: center;
-        font-size: 2vw;
-        top: auto;
-    }
-    
-    footer > p {
-        text-align: center;
-        font-size: 3vw;
-        margin: auto;
-
-    }
-
-}
-
-
-
-@media screen and (max-width: 500px){
-
-    .imagem {
-        width: 100vw;
-        height: 100vh;
-        
-
-    }
-
-    #icone-principal1 {
-        display: inline-block;
-        position: relative;
-        margin-left: 1vw;
-        margin-right: 1vw;
-
-
-        width: 100px;
-        height: 100px;
-
-        border-radius: 50%;
-        top: -1px;
-        
-    }
-    
-    #icone-principal{
-        display: inline-block;
-        position: relative;
-
-        width: 45vw;
-        height: 30vh;
-        text-decoration: none;
-        padding: 10px;
-        top: -7px;
-    }
-    
-    #icone-principal > p {
-        display: inline-block;
-        position: relative;
-        font-size: 3.5vw;
-        
-        color: var(--color-font-navbar);
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.227);
-
-        
-
-        top: -30%;
-        left: 2%;
-        
-    }
-    
-    #icone-principal > p:hover {
-        color: rgb(189, 189, 189)
-    }
-
-    nav {
-        display: inline-block;
-        position: relative;
-
-        width: 94vw;
-        height: 16vh;
-        
-        padding: 20px;
-        background-color: rgb(84, 211, 84);
-        padding-right: 0px;
-        
-
-    }
-    
-    
-    
-    .nav-list {
-        display: inline-block;
-        position: relative;
-        list-style: none;
-        display: inline-block;    
-
-        width: 5vw;
-
-        top: -30px;
-        left: 25%;
-        
-    }
-    
-    .nav-list li{
-        display: inline-block;
-        position: relative;
-        width: 50px;
-        
-        letter-spacing: 1px;
-
-        font-size: 3.5vw;
-
-        left: -10%;
-        
-    }
-    
-    .nav-list li a {
-        display: inline-block;
-        position: relative;
-        width: 100px;
-        text-decoration: none;
-        
-        top: -30px;
-        left: 0vw;
-        color: var(--color-font-navbar);
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.508);
-    }
-    
-    
-    .nav-list > li a:hover {
-        text-decoration: underline;
-        color: rgb(189, 189, 189);
-        
-    }
-    #mini-introducao {
-        font-size: 9vw;
-    }
-
-    .btn-about {
-        width: 40vw;
-        height: 18vh;
-        font-size: 7vw;
-    }
-
-    section {
-        display: block;
-        position: relative;
-        max-width: 100vw;
-        width: 100vw;
-
-        max-height: max-content;
-        padding: 100px 0px 50px 0px;
-    }
-
-
-    .layout-history-beaches1, .layout-history-beaches2 {
-        display: inline-block;
-        position: relative;
-
-        max-width: 100vw;
+    .miniaturas, .miniaturas2{
         width: 100%;
-        
-        min-height: 60vh;
-        max-height: 100vh;
-        height: 100vh;
-
-        padding: 20px 0px 60px 10px;
-
-        margin: 20px 0px 20px 0px;
-
+        height: 100%;
     }
 
-    .layout-history-beaches2 {
-        background-color: var(--color-bg-layout);
-    }
-
-
-
-    .miniaturas, .miniaturas2, .imagem-atras {
-        display: inline-block;
-        position: relative;
-
-        min-width: 50vw;
-        max-width: 95vw;
-        width: 95vw;
-
-        min-height: 20vh;
-        max-height: 95vh;
-        height: 60vh;
-
-        margin: 0px;
-
-        top: 0px;
-        left: 0px;
+    .pictures-beaches {
+        width: 100%;
+        height: 100%;
     }
 
     .link-about {
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: 50%;
-    }   
-
-
-    .link-about2 {
-        transform: translate(-50%, -50%);
-        top: 50%;
-        left: 50%;
-    }
-
-    .history-border {
         display: block;
         position: relative;
-
-        min-width: 60vw;
-        max-width: 95vw;
-        width: 95vw;
-
-        min-height: 10vh;
-        max-height: max-content;
-        height: 65vh;
-
-    }
-
-
-    .flip-pictures {
-        display: inline-block;
-        position: relative;
-
-        min-width: 20vw;
-        max-width: 95vw;
-        width: 95vw;
-
-        max-height: 95vh;
-        height: 60vh;
-
-        
-    }
-    
-    .descricao-praias, .descricao-praias02 {
-        display: inline-block;
-        position: relative;
-        border: 2px dashed black;
-        max-width: 95vw;
-        width: 90vw;
-        overflow-y: scroll;
-        max-height: 100vh;
-        height: 60vh;
-
-
-        font-size: 3vw;
-
-        left: 0px;
-
+        background-color: var(--bgBotao);
+        text-decoration: none;
+        width: max-content;
+        height: max-content;
         padding: 10px;
-
-    }        
-
-    .descricao-praias > p {
-        display: inline-block;
-        position: relative;
-
-
-
-        max-width: 95vw;
-        width: 90vw;
-        height: max-content;
-
-        font-size: 3vw;
+        border-radius: 20px;
+        color: white;
+        top: -56%;
+        margin: auto;
     }
-
-
-    #flip-pictures01 {
-        display: inline-block;
-        position: relative;
-
-        max-width: 95vw;
-        width: 95vw;
-
-        min-height: 30vh;
-        max-height: 75vh;
-        height: 60vh;
-
-        left: 0px;
-
-        
-        
-    }
-
-    #descricao-praias01 {
-        display: block;
-        position: relative;
-        min-width: 25vw;
-        max-width: 90vw;
-        width: 88vw;
-
-        min-height: 15vh;
-        max-height: 80vh;
-        height: max-content;
-
-        top: 30px;
-        left: 0px;
-
-    }
-
-    #descricao-praias01 > p  {
-        max-width: 95vw;
-        width: 90vw;
-
-        max-height: 90vh;
-        height: max-content;
-
-
-    }
-
-    #flip-pictures02 {
-        display: inline-block;
-        position: relative;
-    
-        min-width: 30vw;
-        max-width: 95vw;
-        width: 95vw;
-
-        min-height: 30vh;
-        max-height: 95vh;
-        height: 60vh;
-        left: 0px;
-        
-    }
-
-    #descricao-praias02 {
-        
-        max-width: 95vw;
-        width: 88vw;
-
-        min-height: 20vh;
-        max-height: 95vh;
-        height: max-content;
-
-        top: 10px;
-        left: 0%;
-    }
-
-    #descricao-praias02 > p {
-        max-width: 95vw;
-        width: 90vw;
-
-        padding: 0px 0px 5px 5px;
-    }
-
-    #flip-pictures03 {
-        display: inline-block;
-        position: relative;
-        max-width: 95vw;       
-        width: 95vw;
-
-        max-height: 90vh;
-        height: 60vh;
-
-        left: 0px;
-        
-    }
-
-    #descricao-praias03 {
-        max-width: 95vw;
-        width: 88vw;
-
-        min-height: 15vh;
-        max-height: 80vh;
-        height: max-content;
-
-        top: 5px;
-    }
-
-    #descricao-praias03 > p {
-        max-width: 95vw;
-        width: 90vw;
+    .link-about:hover {
+        text-decoration: underline;
     }
 
     footer {
-        display: inline-block;
-        background-color: black;
+        background-color: rgb(0, 71, 0);
+        text-align: center;
+        color: rgb(60, 255, 125);
+        padding: 30px;
+    }
+
+    footer > p > a {
+        color: rgb(60, 255, 125);
+        text-decoration: none;
+    }
+
+    footer > p > a:hover {
         color: white;
-        margin: auto;
-        width: 91vw;
-        min-width: 80px;
-        padding: 20px;
-        text-align: center;
-        font-size: 2vw;
-        top: auto;
+        text-decoration: underline;
     }
-    
-    footer > p {
-        text-align: center;
-        font-size: 3vw;
-        margin: auto;
-
-    }
-
 }
 
 
-@media screen and (max-width: 300px){
- #icone-principal1 {
-        display: inline-block;
-        position: relative;
-        margin-left: 1vw;
-        margin-right: 1vw;
-
-
-        width: 60px;
-        height: 60px;
-
-        border-radius: 50%;
-        top: -1px;
-        
-    }
-    
-    #icone-principal{
-        display: inline-block;
-        position: relative;
-
-        width: 45vw;
-        height: 30vh;
-        text-decoration: none;
-        padding: 10px;
-        top: -7px;
-    }
-    
-    #icone-principal > p {
-        display: inline-block;
-        position: relative;
-        font-size: 3.5vw;
-        
-        color: var(--color-font-navbar);
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.227);
-
-        
-
-        top: -30px;
-        left: 2%;
-        
-    }
-    
-    #icone-principal > p:hover {
-        color: rgb(189, 189, 189)
-    }
-
-    nav {
-        display: inline-block;
-        position: relative;
-
-        width: 98vw;
-
-        min-height: 70px;
-        height: 7vh;
-        
-        padding: 20px;
-        background-color: rgb(84, 211, 84);
-        padding-right: 50px;
-        
-
-    }
-    
-    
-    
-    .nav-list {
-        display: inline-block;
-        position: relative;
-        list-style: none;
-        display: inline-block;    
-
-        width: 10vw;
-
-        top: 0px;
-        left: 16%;
-        
-    }
-    
-    .nav-list li{
-        display: inline-block;
-        position: relative;
-        width: 200px;
-        
-        letter-spacing: 1px;
-
-        font-size: 3.5vw;
-
-        left: -10%;
-        
-    }
-    
-    .nav-list li a {
-        display: inline-block;
-        position: relative;
-        width: 100px;
-        text-decoration: none;
-        
-        top: -20px;
-        left: 0vw;
-        color: var(--color-font-navbar);
-        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.508);
-    }
-    
-    
-    .nav-list > li a:hover {
-        text-decoration: underline;
-        color: rgb(189, 189, 189);
-        
-    }
-    #mini-introducao {
-        font-size: 3vw;
-    }
-
-    .btn-about {
-        width: 20vw;
-        height: 18vh;
-        font-size: 3vw;
-    }
-
-
-    #mini-introducao {
-        font-size: 15vw;
-        width: 80vw;
-        height: 25vh;
-    }
-
-
-    .btn-about#conhecer {
-        display: block;
-        position: relative;
-        margin: auto;
-        top: 25%;
-    }
-    
-    .layout-history-beaches1, .layout-history-beaches2 {
-        display: inline-block;
-        position: relative;
-
-        min-width: 10vw;
-        max-width: 95vw;
-        width: 90vw;
-
-
-        min-height: 10vh;
-        max-height: 95vh;
-        height: 60vh;
-    }
-
-    .layout-history-beaches2 {
-        background-color: var(--color-bg-layout);
-    }
-
-    .history-border {
-        display: inline-block;
-        position: relative;
-        min-width: 5vw;
-        max-width: 30vw;
-        width: 30vw;
-
-        min-height: 5vh;
-        max-height: 30vh;
+@media screen and (max-width: 700px) {
+    #divIcone-principal {
+        width: 15vw;
         height: 10vh;
     }
 
-    .miniaturas, .miniaturas2, .imagem-atras {
-        display: inline-block;
-        position: relative;
-        min-width: 10vw;
-        max-width: 90vw;
-        width: 90vw;
-
-        min-height: 5vh;
-        max-height: 50vh;
-        height: 25vh;
+    header > nav > ul{
+        left: 60%;
     }
 
-    .flip-pictures {
-        display: inline-block;
-        position: relative;
-        min-width: 5vw;
-        max-width: 90vw;
-        width: 90vw;
-
-        min-height: 5vh;
-        max-height: 50vh;
-        height: 25vh;
-
+    section {
+        max-width: 100%;
+        margin: 0px;
+        margin-bottom: 10vh;
+        padding: 0px;
+        left: 0%;
     }
 
-    .link-about {
-        transform: translate(-50%, -50%);
-        font-size: 8vw;
-        top: 50%;
-        left: 50%;
-    }   
-    
-    .link-about2 {
-        transform: translate(-50%, -50%);
-        font-size: 8vw;
-        top: 50%;
-        left: 250%;
+    .layout-history-beaches {
+        border-radius: 0px;
+        width: 97vw;
+        margin: 0px;
+        margin-bottom: 5%;
+
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(1%, auto);
+        height: max-content;
+        padding: 5% 2% 5% 1%;
     }
 
-    .descricao-praias, .descricao-praias2 {
-        display: inline-block;
-        position: relative;
-
-        border: 1px dashed black;
-
-        min-width: 5vw;
-        max-width: 40vw;
-        width: 20vw;
-
-        min-height: 5vh;
-        max-height: 40vh;
-        height: 20vh;
-
-        top: 0px;
-        left: 0px;
-    
+    .miniaturas, .miniaturas2 {
+        height: 100%;
+    }
+    .layout-history-beaches:nth-child(odd) {
+        background-color: var(--bgLayoutHistoryOdd);
     }
 
-    #flip-pictures01 {
-        display: inline-block;
-        position: relative;
-
-        max-width: 90vw;
-        width: 90vw;
-
-        min-height: 20vh;
-        max-height: 90vh;
-        height: 25vh;
-
-        top: 0px;
-        left: 0px;
+    .layout-history-beaches:nth-child(odd) > .flip-pictures {
+        grid-column-start: 1;
+        grid-column-end: 2;        
+        width: 100%;
+        height: 50vh;
+        margin-bottom: 5%;
+        box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.356);
     }
 
-    #descricao-praias01 {
-        display: inline-block;
-        position: relative;
-        min-width: 5vw;
-        max-width: 90vw;
-        width: 85vw;
-
-        min-height: 5vh;
-        max-height: 30vh;
-        height: 30vh;
-
-        padding: 5px;
-
-        top: 0px;
+    .layout-history-beaches:nth-child(even) > .flip-pictures {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 1;
+        width: 100%;
+        height: 50vh;
+        margin-bottom: 5%;
+        box-shadow: 3px 4px 5px rgba(0, 0, 0, 0.356);
     }
 
-    #descricao-praias01 > p {
-        max-width: 90vw;
-        width: 80vw;
-        font-size: 8vw;
+    .layout-history-beaches:nth-child(odd) > .descricao-praias {
+        grid-column-start: 1;
+        grid-column-end: 2;
     }
 
 
-    #flip-pictures02 {
-        display: inline-block;
-        position: relative;
-
-        max-width: 90vw;
-        width: 90vw;
-
-        min-height: 20vh;
-        max-height: 80vh;
-        height: 25vh;
-
-        top: 0px;
-        left: 0px;
-    }
-
-    #descricao-praias02 {
-        display: inline-block;
-        position: relative;
-        min-width: 5vw;
-        max-width: 90vw;
-        width: 80vw;
-
-        min-height: 5vh;
-        max-height: 30vh;
-        height: 30vh;
-        
-        padding: 10px;
-
-        top: 0px;
-        left: 5%;
-    }
-
-    #descricao-praias02 > p {
-        max-width: 90vw;
-        width: 80vw;
-        font-size: 8vw;
-        padding: 0px 5px 0px 5px;
-    }
-
-
-    #flip-pictures03 {
-        display: inline-block;
-        position: relative;
-
-        min-height: 20vh;
-        max-height: 80vh;
-        height: 25vh;
-
-        max-width: 90vw;
-        width: 90vw;
-
-
-        top: 0px;
-        left: 0px;
-    }
-
-    #descricao-praias03 {
-        display: inline-block;
-        position: relative;
-        min-width: 5vw;
-        max-width: 90vw;
-        width: 85vw;
-
-        min-height: 5vh;
-        max-height: 30vh;
-        height: 30vh;
-
-        padding: 5px;
-
-        top: 0px;
-    }
-
-    #descricao-praias03 > p {
-        max-width: 90vw;
-        width: 80vw;
-        font-size: 8vw;
-    }
-    footer {
-        display: inline-block;
-        background-color: black;
-        color: white;
-        margin: auto;
-        width: 99vw;
-        min-width: 80px;
-        padding: 20px;
-        text-align: center;
-        font-size: 2vw;
-        top: auto;
+    .layout-history-beaches:nth-child(even) > .descricao-praias {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 2;
     }
     
-    footer > p {
-        text-align: center;
+    .descricao-praias {
         font-size: 3vw;
-        margin: auto;
-
+        border: 2px dashed black;
     }
 }
-
-
-
-
-

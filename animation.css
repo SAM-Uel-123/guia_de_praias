@@ -2,119 +2,61 @@
     animation-duration: 2s;
 }
 
+.miniatura-invertida {
+    transform: rotateY(180deg);
+}
 
 @media screen and (max-width: 1901px) {
-    @supports (perspective: 1201px) {
-        .flip-pictures {
-            display: inline-block;
-            position: relative;
-            width: 10vw;
-            height: 10vh;
-            max-width: 200px;
-            min-width: 120px;
 
-            perspective: 100vw;
-            -webkit-perspective: 100vw;
-            -moz-perspective: 100vw;
-            -ms-perspective: 100vw;
-
-            background-color: transparent;
-        }
-
+    .flip-pictures {
+        background-color: transparent;
+        width: 300px;
+        height: 200px;
+        border: 1px solid #f1f1f1;
+        perspective: 1000px;
     }
-
-    @supports (transition-duration: 0.8s) {
-        .pictures-beaches{
-            position: relative;
-            -webkit-transition-duration: 0.8s;
-            -moz-transition-duration: 0.8s;
-            -ms-transition-duration: 0.8s;
-            transition-duration: 0.8s;
-            
-        }
+    
+    .pictures-beaches {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
     }
-
-    @supports (transform-style: preserve-3d){
-        .pictures-beaches {
-            position: relative;
-
-            transform-style: preserve-3d;
-            -webkit-transform-style: preserve-3d;
-            -moz-transform-style: preserve-3d;
-            -ms-transform-style: preserve-3d;
-            
-        }
+    
+    .flip-pictures:hover .pictures-beaches {
+        transform: rotateY(180deg);
     }
-
-    @supports (-webkit-transform: rotateY(-180deg)) {
-        .layout-history-beaches1 .flip-pictures:hover .pictures-beaches {
-            transform: rotateY(-180deg);
-            -webkit-transform: rotateY(-180deg);
-            -moz-transform: rotateY(-180deg);
-            -ms-transform: rotateY(-180deg);
-
-            
-        }
+    
+    .imagem-frente, .imagem-atras {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
     }
-
-    @supports (-webkit-transform: rotateY(180deg)) {
-        .layout-history-beaches2 .flip-pictures:hover .pictures-beaches {
-            -webkit-transform: rotateY(180deg);
-            -moz-transform: rotateY(180deg);
-            -ms-transform: rotateY(180deg);
-            transform: rotateY(180deg);
-
-            
-        }
+    
+    .imagem-frente {
+        background-color: #bbb;
+        background-size: cover ;
+        color: black;
     }
+    
+    .imagem-atras {
+        background-color: transparent;
+        color: white;
 
-    @supports (-webkit-transition-duration: 2s) {
-        .flip-pictures:hover .pictures-beaches > .imagem-frente > img {
-            -webkit-transition-duration: 2s;
-            -moz-transition-duration: 2s;
-            -ms-transition-duration: 2s;
-            transition-duration: 2s;
-        }
+        transform: rotateY(180deg);
     }
-
-    @supports (filter: blur(5px)) {
-        .flip-pictures:hover .pictures-beaches > .imagem-frente > img {
-            -webkit-filter: blur(5px);
-            -moz-filter: blur(5px);
-            -ms-filter: blur(5px);
-            filter: blur(5px);
-        }
-    }
-
-    @supports (-webkit-backface-visibility: hidden) {
-        .imagem-frente, .imagem-atras {
-            position: absolute;
-            backface-visibility: hidden;
-            -webkit-backface-visibility: hidden;
-            -moz-backface-visibility: hidden;
-            -ms-backface-visibility: hidden;
-            
-
-
-
-
-
-            
-        }
-    }
-
-    @supports (transform: rotateY(180deg)) {
-        .imagem-atras {
-            transform: rotateY(180deg);
-            -webkit-transform: rotateY(180deg);
-            -moz-transform: rotateY(180deg);
-            -ms-transform: rotateY(180deg);
-            
-
-            
-        }
+    
+    .miniatura-invertida{
+        -webkit-filter: blur(2px);
+        -ms-filter: blur(2px);
+        filter: blur(2px);
     }
 }
+
 
 /*
 
